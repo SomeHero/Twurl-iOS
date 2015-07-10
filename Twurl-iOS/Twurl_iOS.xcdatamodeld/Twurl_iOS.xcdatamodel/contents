@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="6751" systemVersion="14C1514" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Category" representedClassName="Category" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="channels" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Channel" inverseName="category" inverseEntity="Channel" syncable="YES"/>
+    </entity>
+    <entity name="Channel" representedClassName="Channel" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="category" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Category" inverseName="channels" inverseEntity="Category" syncable="YES"/>
+        <relationship name="influencer" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Influencer" inverseName="channel" inverseEntity="Influencer" syncable="YES"/>
+    </entity>
+    <entity name="Influencer" representedClassName="Influencer" syncable="YES">
+        <attribute name="created_at" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="handle" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="twitter_username" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="updated_at" optional="YES" attributeType="Date" syncable="YES"/>
+        <relationship name="channel" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Channel" inverseName="influencer" inverseEntity="Channel" syncable="YES"/>
+        <relationship name="twurls" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Twurl" inverseName="influencer" inverseEntity="Twurl" syncable="YES"/>
+    </entity>
+    <entity name="Twurl" representedClassName="Twurl" syncable="YES">
+        <attribute name="created_at" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="headline" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="headline_image_url" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="summary" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="updated_at" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="url" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="influencer" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Influencer" inverseName="twurls" inverseEntity="Influencer" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Category" positionX="-27" positionY="18" width="128" height="88"/>
+        <element name="Channel" positionX="18" positionY="81" width="128" height="103"/>
+        <element name="Influencer" positionX="18" positionY="117" width="128" height="148"/>
+        <element name="Twurl" positionX="54" positionY="126" width="128" height="165"/>
+    </elements>
+</model>

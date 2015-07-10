@@ -1,0 +1,31 @@
+PODS:
+  - Alamofire (1.2.3)
+  - DateTools (1.6.1)
+  - FontAwesome.swift (0.4.3)
+  - HanekeSwift (0.9.1)
+  - NSDate+TimeAgo (1.0.3)
+  - SwiftyJSON (2.2.0)
+  - SWRevealViewController (2.3.0)
+  - UIScrollView-InfiniteScroll (0.7.2)
+
+DEPENDENCIES:
+  - Alamofire (~> 1.2.2)
+  - DateTools
+  - FontAwesome.swift
+  - HanekeSwift
+  - NSDate+TimeAgo
+  - SwiftyJSON (~> 2.2.0)
+  - SWRevealViewController (~> 2.3)
+  - UIScrollView-InfiniteScroll
+
+SPEC CHECKSUMS:
+  Alamofire: 5550bf0b575ed1a4bf9be572f9463e1015cc169e
+  DateTools: 9bcc89e4f2f9004d8a7a2bd1b49269cf78968e65
+  FontAwesome.swift: 4f3dbf913b9ef9db275d02b75f6b794fa3bcbabc
+  HanekeSwift: 50d37bfbc4432edc649167e538c259feccb4a2bb
+  NSDate+TimeAgo: 416f55d2696d3744c313091c5a9280d47f8238fe
+  SwiftyJSON: 0b3e6c07af17ff745e77e8e9984097b55c956e5c
+  SWRevealViewController: 6d3fd97f70112fd7cef9de14df4260eacce4c63a
+  UIScrollView-InfiniteScroll: cfa860f96f5a2e3b4575d59fe6d08d337093ac2a
+
+COCOAPODS: 0.37.2

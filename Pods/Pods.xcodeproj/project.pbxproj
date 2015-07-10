@@ -1,0 +1,1954 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		002FD402A27770BBA2B1E2E0 /* DTConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E2D3F1C080AC0F20CF54F0C /* DTConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		079547D60E71939B4380748C /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D33EA69557EBA0E560F6ABE /* ResponseSerialization.swift */; };
+		0FB6B7FD6BE98F6E97862017 /* CryptoSwiftMD5.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DE8757EC95B539BC244669 /* CryptoSwiftMD5.swift */; };
+		142F5D4E2B1FC18DCAD41151 /* DiskCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE09368A127780D95DFAAFF /* DiskCache.swift */; };
+		1E6662D54348B26105A717DE /* Pods-Twurl-SWRevealViewController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 58A61F53FA802D2F85CD5C13 /* Pods-Twurl-SWRevealViewController-dummy.m */; };
+		1E75C4DE61114C68D74DA2DD /* Pods-Twurl-Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 033C0255B2451EA323129666 /* Pods-Twurl-Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1FC13608B802804962177297 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C400E5666E2811E0F2623DDD /* Foundation.framework */; };
+		22372261AEBD513000237A86 /* DTTimePeriod.m in Sources */ = {isa = PBXBuildFile; fileRef = E3C63F8E2A21BFAF784D67FC /* DTTimePeriod.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		2A25324BBD6C8CC3813955D4 /* String+Haneke.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC4E09AB6D283408A4274D3 /* String+Haneke.swift */; };
+		2B27574D3FAE7840F62D8762 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23B18E09AEB00329097B6B94 /* UIKit.framework */; };
+		319F045B01BA721B2480C1B2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C400E5666E2811E0F2623DDD /* Foundation.framework */; };
+		331C90772FEEF5ABF9498B84 /* Fetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405FC603E141BF9F898C35BB /* Fetcher.swift */; };
+		3762C1B585D343D2FFF824DE /* DTTimePeriodCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B68DDFFE88B5E00F9F22FAA /* DTTimePeriodCollection.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		38D69516A8FE28778370CF2C /* NSDate+DateTools.h in Headers */ = {isa = PBXBuildFile; fileRef = 92F08D256FB228455C50B011 /* NSDate+DateTools.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		39546F730F6665B415860930 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7AB21373003F90661D4C9F6 /* CoreGraphics.framework */; };
+		3DAA15B0EC9D084B52060BDC /* Pods-Twurl-DateTools-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B64C87277D6DE888693CAA97 /* Pods-Twurl-DateTools-dummy.m */; };
+		413C668375D96FE5162B65B8 /* CGSize+Swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D0B4042D2CC48F738C1F784 /* CGSize+Swift.swift */; };
+		45B98F5EF8B031D731A7EB5D /* UIScrollView+InfiniteScroll.m in Sources */ = {isa = PBXBuildFile; fileRef = 24514908889F16FD59175B76 /* UIScrollView+InfiniteScroll.m */; };
+		49796D5925729C22AA1AAD82 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768318E0D41E02152A4C4EB0 /* Request.swift */; };
+		4B9B4A04165F19DD484ABA2A /* DTTimePeriodChain.m in Sources */ = {isa = PBXBuildFile; fileRef = 22379DAC451DE0BCC96FF014 /* DTTimePeriodChain.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		4C862C401BCF2D9970A91CA7 /* Format.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2762531A0558264C21895444 /* Format.swift */; };
+		50C5B5CCC8A70AE516953F40 /* DTTimePeriod.h in Headers */ = {isa = PBXBuildFile; fileRef = 03531D6C951C036693BADE13 /* DTTimePeriod.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		548F49D40CD8E31B4218C220 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C400E5666E2811E0F2623DDD /* Foundation.framework */; };
+		55EF28978F11C7F232E49AD5 /* Pods-Twurl-FontAwesome.swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4990FF203D5E7D313B9723B6 /* Pods-Twurl-FontAwesome.swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5AC9D065490EAAAB5F67A3B6 /* NSDate+TimeAgo.m in Sources */ = {isa = PBXBuildFile; fileRef = 22AB12B4E068511E8A30757A /* NSDate+TimeAgo.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		5B8665A063CFC71E97A8AEEE /* UIButton+Haneke.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0CF7E079C5A5BCBA8BB90D7 /* UIButton+Haneke.swift */; };
+		5E23C3E56D04F9E47B2D7F89 /* NSHTTPURLResponse+Haneke.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FF5198F25DCF826236F22DC /* NSHTTPURLResponse+Haneke.swift */; };
+		62A4D73AB71E87B3D91C3DF5 /* Pods-Twurl-UIScrollView-InfiniteScroll-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CEAD718E8003007A2ADDE45 /* Pods-Twurl-UIScrollView-InfiniteScroll-dummy.m */; };
+		65B086714BD8DE29E37F8722 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = D752A4DCA7B942FE3A309756 /* SwiftyJSON.swift */; };
+		6A9678E5AB3F62A93B99457B /* Upload.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93EAEFBB5B727004FA15AE8 /* Upload.swift */; };
+		6C9C8180B1F98E3D52699D37 /* Pods-Twurl-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C6A261B42255DC574F0C631D /* Pods-Twurl-dummy.m */; };
+		6D3EB1513988CE95EC9E2A28 /* Pods-Twurl-DateTools-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 571708A8263CA6FA4BDA07B6 /* Pods-Twurl-DateTools-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6F89E51E815FE77D591CD120 /* DiskFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0793AE6CD69F473CE6F6C3 /* DiskFetcher.swift */; };
+		704AC7B3304F3344CEFA50E4 /* Pods-Twurl-SwiftyJSON-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E57527336671950261A7A3D7 /* Pods-Twurl-SwiftyJSON-dummy.m */; };
+		70949687F3645C743D23F94C /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F28AEE96DB77EDF6FD262605 /* CoreText.framework */; };
+		730DDC45735576A8E2750961 /* Pods-Twurl-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 19E354F69F2D1D9CF5CC33D3 /* Pods-Twurl-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		789FB59522D368D100615F64 /* FontAwesome.otf in Resources */ = {isa = PBXBuildFile; fileRef = 55841CFEAC1021CE55F960B1 /* FontAwesome.otf */; };
+		7E9267AD1A8D3E15B2673348 /* UIImage+Haneke.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8E2A27D2A5EDC4D318FEFA /* UIImage+Haneke.swift */; };
+		7EA0504E932AA4E762FCED77 /* Haneke.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72D196A012495011C9FF754 /* Haneke.swift */; };
+		80AB19565E8DECC3C103BF4E /* DTTimePeriodChain.h in Headers */ = {isa = PBXBuildFile; fileRef = F7131310FA99B7AED549DF2D /* DTTimePeriodChain.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		830FAAC539F94BEAE8435473 /* Fetch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EC720EDAD8CDAC35D86A2C /* Fetch.swift */; };
+		89222F4F462EC7D740FB9041 /* Pods-Twurl-SwiftyJSON-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D9A9AE06F3E7300612B1EF9F /* Pods-Twurl-SwiftyJSON-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		89CBE6CC1F5CF318A9A18DD4 /* Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C87AA122FC88CA493CD4A36 /* Cache.swift */; };
+		8AEB42809B498C247FACA116 /* NSDateTimeAgo.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4C32A1E17B67B72C9C41703C /* NSDateTimeAgo.bundle */; };
+		8B7F3D970F6FEB510FBE9922 /* DateTools.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 18CFA20F0D4D5F9C70F1A4ED /* DateTools.bundle */; };
+		8E10641432F8B494A140195B /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB213A5A3F651F40F4F2D1BD /* Data.swift */; };
+		905674CB991AA80AB597AB3F /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 132F6E403D20BC6587EFD5FD /* Alamofire.swift */; };
+		A596924CF5A0544A82AB063B /* SWRevealViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = C23DBE5BD37B138A5EF1FDA2 /* SWRevealViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A6E2612C76470753AFA28B8D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C400E5666E2811E0F2623DDD /* Foundation.framework */; };
+		A84CAE4A3D0F19BA7E5AEBAC /* UIScrollView+InfiniteScroll.h in Headers */ = {isa = PBXBuildFile; fileRef = 96C9A0FC6B413954DC814669 /* UIScrollView+InfiniteScroll.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AB758F5FED676F5FAD5F8BBE /* NSDate+TimeAgo.h in Headers */ = {isa = PBXBuildFile; fileRef = 7EAEFA36BC53100DDABD89C1 /* NSDate+TimeAgo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ADC63FC2864047E30B582840 /* DTTimePeriodGroup.h in Headers */ = {isa = PBXBuildFile; fileRef = 576AB0E08ECB336AFDF37C17 /* DTTimePeriodGroup.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ADFE1EB1F7D538F905411287 /* Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BAE564B46A39F0AB4D354FA /* Enum.swift */; };
+		B390B9A2D4FC321DB794C625 /* Pods-Twurl-SWRevealViewController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F9ED426D920682114DF0BB8F /* Pods-Twurl-SWRevealViewController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B460F57F6445CD1EFC75277F /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FA6CE6AA13C6F7A95DB39A4 /* SWRevealViewController.m */; };
+		B5DF71A4C9990721EEE2684A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C400E5666E2811E0F2623DDD /* Foundation.framework */; };
+		B8D373A538BF83889DD6337A /* FontAwesome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89201138962D2BEE3F91ED48 /* FontAwesome.swift */; };
+		C384196642AF1663CADBEFBD /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75F321BF2E135AC9854BBCD /* Log.swift */; };
+		C3DA63E90D95DD3F5CB602C9 /* NSDate+DateTools.m in Sources */ = {isa = PBXBuildFile; fileRef = D0F59234595684999F0D9C82 /* NSDate+DateTools.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		CB2661DE6D81AD1E8300D422 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32FDA26B8AFA494E4CA828DA /* Validation.swift */; };
+		CB76CE192D6F65FFFEA15D67 /* Pods-Twurl-FontAwesome.swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DC23DFB6DFF7E3512BD6BBBC /* Pods-Twurl-FontAwesome.swift-dummy.m */; };
+		CE6FFE73B913DE228B3E0D33 /* NetworkFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29518E063011955CED5ACD09 /* NetworkFetcher.swift */; };
+		D0FFAFC8E1BC1E4C468A37F2 /* FontAwesome.swift.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 47B653685A269BF0FC16B932 /* FontAwesome.swift.bundle */; };
+		D589E07CD746D63240306B11 /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C880BE7F20CA2AF59B4E087 /* Manager.swift */; };
+		D6B5144360CEE9DFBEE09781 /* Download.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2236D8AAAFADC711E3E5747F /* Download.swift */; };
+		DBAC517FC0124473466B6303 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C400E5666E2811E0F2623DDD /* Foundation.framework */; };
+		DC07B2E0AE9A048F6C6DAE44 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C400E5666E2811E0F2623DDD /* Foundation.framework */; };
+		DC9F97CAFA1EA2FBB8E706AE /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA14B762D82C23559CA2FF91 /* ParameterEncoding.swift */; };
+		DD8420DCABA3A860F3FB97AD /* Pods-Twurl-NSDate+TimeAgo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A2EBFFBC3CA99BBDC33984A0 /* Pods-Twurl-NSDate+TimeAgo-dummy.m */; };
+		DE403870534EB2E8C35749CF /* Pods-Twurl-NSDate+TimeAgo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C1A0FDA00231C9692F882D1 /* Pods-Twurl-NSDate+TimeAgo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E26CC49323410751EE3EEBE3 /* Pods-Twurl-Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A905273ACD759F84E4F5F8C3 /* Pods-Twurl-Alamofire-dummy.m */; };
+		E548990EEEB632D353258224 /* Pods-Twurl-HanekeSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DA72EBEF59C65165B210872 /* Pods-Twurl-HanekeSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E629EA8D7A1E075FF1C0ADEE /* NSFileManager+Haneke.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44780C0F9124627C234FE968 /* NSFileManager+Haneke.swift */; };
+		EC0FB1BBDB708C74C75E0A30 /* Pods-Twurl-UIScrollView-InfiniteScroll-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D3F082E457DFA68BDA09074C /* Pods-Twurl-UIScrollView-InfiniteScroll-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EC27CA0B42510033C667E226 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C400E5666E2811E0F2623DDD /* Foundation.framework */; };
+		ECFF6583EA094FDB27502002 /* DateTools.h in Headers */ = {isa = PBXBuildFile; fileRef = 77253B164C2DF8771B3EA2F3 /* DateTools.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EEEDF72BA7981A4FA6407BE6 /* DTTimePeriodCollection.h in Headers */ = {isa = PBXBuildFile; fileRef = AF38E46B7E2B62ED4BC313C3 /* DTTimePeriodCollection.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F2EF8FCF12480C9A90A60F60 /* DTTimePeriodGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 149DDAFE5AE615D652C396BD /* DTTimePeriodGroup.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		F389AB29E5781E3A6714AA0D /* UIView+Haneke.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78240872BA21EC108FBBFEB2 /* UIView+Haneke.swift */; };
+		F3C841EA41F78B488EA44FC3 /* DTError.m in Sources */ = {isa = PBXBuildFile; fileRef = A4258BD4411BE7AA5D4F3587 /* DTError.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		F5B5D6053FAE53D92C2625B0 /* Pods-Twurl-HanekeSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BB23737AB552AF2FBD068577 /* Pods-Twurl-HanekeSwift-dummy.m */; };
+		F83AA082C961523679498138 /* UIImageView+Haneke.swift in Sources */ = {isa = PBXBuildFile; fileRef = 859E17310CA38FE59D939AD4 /* UIImageView+Haneke.swift */; };
+		F93320EC8BD3E4F5C4C47B79 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C400E5666E2811E0F2623DDD /* Foundation.framework */; };
+		FF423E03A8BE789E36DC8E4A /* DTError.h in Headers */ = {isa = PBXBuildFile; fileRef = 0164C8D52C4D83C5130DE04D /* DTError.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		07351B61D1B9BE6485AE1144 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 543FFD1E03181981E6060091 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 05D81F3C6A39712B897F59A7;
+			remoteInfo = "Pods-Twurl-SwiftyJSON";
+		};
+		2A6ADD819F0B894631A1EBFD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 543FFD1E03181981E6060091 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D6B9EEE58DF887177F084031;
+			remoteInfo = "Pods-Twurl-FontAwesome.swift-FontAwesome.swift";
+		};
+		541B6FFD72128FE2BCF60CE9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 543FFD1E03181981E6060091 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7F13BF5E52E14F371878686E;
+			remoteInfo = "Pods-Twurl-FontAwesome.swift";
+		};
+		62A96C05B1FEEE0118C6B9BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 543FFD1E03181981E6060091 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6704700F60DE038B7C0DF7BF;
+			remoteInfo = "Pods-Twurl-SWRevealViewController";
+		};
+		7AEB11CC8E9A7DCF182B3F82 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 543FFD1E03181981E6060091 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CA58704D7F1803B7B4852A9B;
+			remoteInfo = "Pods-Twurl-NSDate+TimeAgo";
+		};
+		B226455A420E344EDCE5991A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 543FFD1E03181981E6060091 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D2EF31E1301062C310C6D295;
+			remoteInfo = "Pods-Twurl-HanekeSwift";
+		};
+		D52E828291B5D01E2D27F272 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 543FFD1E03181981E6060091 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4D6157B0125CABAE98522C57;
+			remoteInfo = "Pods-Twurl-DateTools";
+		};
+		F7452FF093E237274A775947 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 543FFD1E03181981E6060091 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 89B5DA211F6DFA1B0F5AEB14;
+			remoteInfo = "Pods-Twurl-Alamofire";
+		};
+		FE110B7FDE05C718FD0FD222 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 543FFD1E03181981E6060091 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8A3A741A1C7A47F30FC7D488;
+			remoteInfo = "Pods-Twurl-UIScrollView-InfiniteScroll";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0164C8D52C4D83C5130DE04D /* DTError.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DTError.h; path = DateTools/DTError.h; sourceTree = "<group>"; };
+		033C0255B2451EA323129666 /* Pods-Twurl-Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Twurl-Alamofire-umbrella.h"; sourceTree = "<group>"; };
+		03531D6C951C036693BADE13 /* DTTimePeriod.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DTTimePeriod.h; path = DateTools/DTTimePeriod.h; sourceTree = "<group>"; };
+		050709E0ADE560245F13E368 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		096BD875048253B9DB3F62BF /* NSDate_TimeAgo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NSDate_TimeAgo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B27F9DB2441FAA2FD4B2BAA /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		0BAE564B46A39F0AB4D354FA /* Enum.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Enum.swift; path = FontAwesome/Enum.swift; sourceTree = "<group>"; };
+		0C880BE7F20CA2AF59B4E087 /* Manager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Manager.swift; path = Source/Manager.swift; sourceTree = "<group>"; };
+		0C9B25F0DC1306801C686FD3 /* Pods-Twurl-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Twurl-frameworks.sh"; sourceTree = "<group>"; };
+		1109B04E8A12FB8258743EF2 /* Pods-Twurl-SWRevealViewController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Twurl-SWRevealViewController.xcconfig"; sourceTree = "<group>"; };
+		1137212A1DCD4CC5C15CA05C /* Pods-Twurl-FontAwesome.swift-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Twurl-FontAwesome.swift-Private.xcconfig"; sourceTree = "<group>"; };
+		132F6E403D20BC6587EFD5FD /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
+		149DDAFE5AE615D652C396BD /* DTTimePeriodGroup.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DTTimePeriodGroup.m; path = DateTools/DTTimePeriodGroup.m; sourceTree = "<group>"; };
+		18CFA20F0D4D5F9C70F1A4ED /* DateTools.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = DateTools.bundle; path = DateTools/DateTools.bundle; sourceTree = "<group>"; };
+		19E354F69F2D1D9CF5CC33D3 /* Pods-Twurl-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Twurl-umbrella.h"; sourceTree = "<group>"; };
+		1BC4E09AB6D283408A4274D3 /* String+Haneke.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+Haneke.swift"; path = "Haneke/String+Haneke.swift"; sourceTree = "<group>"; };
+		1BE582F4EBD82195ABCAB045 /* DateTools.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DateTools.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D33EA69557EBA0E560F6ABE /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
+		1ED3B3D0CF343ACD78EDF814 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F9F38ACF1DEAB58352CC695 /* Pods-Twurl-NSDate+TimeAgo.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Twurl-NSDate+TimeAgo.xcconfig"; sourceTree = "<group>"; };
+		20D0BB6C3D463B4375514FB4 /* Pods-Twurl-Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Twurl-Alamofire-prefix.pch"; sourceTree = "<group>"; };
+		2236D8AAAFADC711E3E5747F /* Download.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Download.swift; path = Source/Download.swift; sourceTree = "<group>"; };
+		22379DAC451DE0BCC96FF014 /* DTTimePeriodChain.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DTTimePeriodChain.m; path = DateTools/DTTimePeriodChain.m; sourceTree = "<group>"; };
+		22AB12B4E068511E8A30757A /* NSDate+TimeAgo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSDate+TimeAgo.m"; sourceTree = "<group>"; };
+		23B18E09AEB00329097B6B94 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		24514908889F16FD59175B76 /* UIScrollView+InfiniteScroll.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIScrollView+InfiniteScroll.m"; path = "Classes/UIScrollView+InfiniteScroll.m"; sourceTree = "<group>"; };
+		2762531A0558264C21895444 /* Format.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Format.swift; path = Haneke/Format.swift; sourceTree = "<group>"; };
+		29518E063011955CED5ACD09 /* NetworkFetcher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkFetcher.swift; path = Haneke/NetworkFetcher.swift; sourceTree = "<group>"; };
+		2AFAB6006B5B85A401E059AA /* Pods-Twurl-UIScrollView-InfiniteScroll-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Twurl-UIScrollView-InfiniteScroll-Private.xcconfig"; sourceTree = "<group>"; };
+		2B2970F79F451635E0096CAA /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BE09368A127780D95DFAAFF /* DiskCache.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DiskCache.swift; path = Haneke/DiskCache.swift; sourceTree = "<group>"; };
+		2C87AA122FC88CA493CD4A36 /* Cache.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Cache.swift; path = Haneke/Cache.swift; sourceTree = "<group>"; };
+		2FA4524927E7F1900902D921 /* SWRevealViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SWRevealViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		30344FE23EF3BDC7656AF2C4 /* Pods_Twurl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Twurl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		31B8CB7D1E3B102EBF8362D4 /* Pods-Twurl-NSDate+TimeAgo-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Twurl-NSDate+TimeAgo-prefix.pch"; sourceTree = "<group>"; };
+		32FDA26B8AFA494E4CA828DA /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
+		3C1A0FDA00231C9692F882D1 /* Pods-Twurl-NSDate+TimeAgo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Twurl-NSDate+TimeAgo-umbrella.h"; sourceTree = "<group>"; };
+		3DA72EBEF59C65165B210872 /* Pods-Twurl-HanekeSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Twurl-HanekeSwift-umbrella.h"; sourceTree = "<group>"; };
+		3E7BDD1D996B8396C22C3B26 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		405FC603E141BF9F898C35BB /* Fetcher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Fetcher.swift; path = Haneke/Fetcher.swift; sourceTree = "<group>"; };
+		42FF4E45A449C664258D36DA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44780C0F9124627C234FE968 /* NSFileManager+Haneke.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSFileManager+Haneke.swift"; path = "Haneke/NSFileManager+Haneke.swift"; sourceTree = "<group>"; };
+		4568B66D7883C0423A7BCB4E /* Pods-Twurl-HanekeSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Twurl-HanekeSwift.modulemap"; sourceTree = "<group>"; };
+		45A6B1A63099187AAD822900 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		47B653685A269BF0FC16B932 /* FontAwesome.swift.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FontAwesome.swift.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		4990FF203D5E7D313B9723B6 /* Pods-Twurl-FontAwesome.swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Twurl-FontAwesome.swift-umbrella.h"; sourceTree = "<group>"; };
+		4A59DF179A6342056713E5CA /* Pods-Twurl-Alamofire.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Twurl-Alamofire.xcconfig"; sourceTree = "<group>"; };
+		4C32A1E17B67B72C9C41703C /* NSDateTimeAgo.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; path = NSDateTimeAgo.bundle; sourceTree = "<group>"; };
+		4CEAD718E8003007A2ADDE45 /* Pods-Twurl-UIScrollView-InfiniteScroll-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Twurl-UIScrollView-InfiniteScroll-dummy.m"; sourceTree = "<group>"; };
+		4D2F9221129CACEB74197C8D /* Pods-Twurl-HanekeSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Twurl-HanekeSwift-prefix.pch"; sourceTree = "<group>"; };
+		4DEB99145C2CFE44E94732BB /* Pods-Twurl-FontAwesome.swift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Twurl-FontAwesome.swift.xcconfig"; sourceTree = "<group>"; };
+		54A4166F62AD96C58BF828CC /* Pods-Twurl-SwiftyJSON.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Twurl-SwiftyJSON.xcconfig"; sourceTree = "<group>"; };
+		5540BD021C46972FE0C85DF1 /* Pods-Twurl-UIScrollView-InfiniteScroll-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Twurl-UIScrollView-InfiniteScroll-prefix.pch"; sourceTree = "<group>"; };
+		55841CFEAC1021CE55F960B1 /* FontAwesome.otf */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = FontAwesome.otf; path = FontAwesome/FontAwesome.otf; sourceTree = "<group>"; };
+		571708A8263CA6FA4BDA07B6 /* Pods-Twurl-DateTools-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Twurl-DateTools-umbrella.h"; sourceTree = "<group>"; };
+		576AB0E08ECB336AFDF37C17 /* DTTimePeriodGroup.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DTTimePeriodGroup.h; path = DateTools/DTTimePeriodGroup.h; sourceTree = "<group>"; };
+		58A61F53FA802D2F85CD5C13 /* Pods-Twurl-SWRevealViewController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Twurl-SWRevealViewController-dummy.m"; sourceTree = "<group>"; };
+		5B707F4CE09C9A8A39274128 /* Pods-Twurl-NSDate+TimeAgo-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Twurl-NSDate+TimeAgo-Private.xcconfig"; sourceTree = "<group>"; };
+		5CA1E1C0DC900EF8A9152949 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5E1E8C665D82B073695953B0 /* Pods-Twurl-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Twurl-acknowledgements.markdown"; sourceTree = "<group>"; };
+		63A9E886667E1C3741AC4D01 /* Pods-Twurl-NSDate+TimeAgo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Twurl-NSDate+TimeAgo.modulemap"; sourceTree = "<group>"; };
+		677AD515DA309904FDF58E65 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6789452C6A372DB126E673CB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6A83568EB8A3901BF6122480 /* FontAwesome_swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FontAwesome_swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B1ED58B7042C952E8D8A499 /* Pods-Twurl-FontAwesome.swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Twurl-FontAwesome.swift.modulemap"; sourceTree = "<group>"; };
+		6FF5198F25DCF826236F22DC /* NSHTTPURLResponse+Haneke.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSHTTPURLResponse+Haneke.swift"; path = "Haneke/NSHTTPURLResponse+Haneke.swift"; sourceTree = "<group>"; };
+		71C417E4B8937FEB63E02730 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		768318E0D41E02152A4C4EB0 /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
+		77253B164C2DF8771B3EA2F3 /* DateTools.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DateTools.h; path = DateTools/DateTools.h; sourceTree = "<group>"; };
+		78240872BA21EC108FBBFEB2 /* UIView+Haneke.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Haneke.swift"; path = "Haneke/UIView+Haneke.swift"; sourceTree = "<group>"; };
+		79E3D3CE56D68C97DBACD94D /* Pods-Twurl-DateTools-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Twurl-DateTools-prefix.pch"; sourceTree = "<group>"; };
+		7D0B4042D2CC48F738C1F784 /* CGSize+Swift.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CGSize+Swift.swift"; path = "Haneke/CGSize+Swift.swift"; sourceTree = "<group>"; };
+		7D94F9923314644F1CC3AA85 /* Pods-Twurl-HanekeSwift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Twurl-HanekeSwift.xcconfig"; sourceTree = "<group>"; };
+		7EAEFA36BC53100DDABD89C1 /* NSDate+TimeAgo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSDate+TimeAgo.h"; sourceTree = "<group>"; };
+		7F6445283A9EF49C3D888904 /* UIScrollView_InfiniteScroll.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UIScrollView_InfiniteScroll.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7FA6CE6AA13C6F7A95DB39A4 /* SWRevealViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SWRevealViewController.m; path = SWRevealViewController/SWRevealViewController.m; sourceTree = "<group>"; };
+		81B78D23734BBD171946745A /* Pods-Twurl-SwiftyJSON-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Twurl-SwiftyJSON-prefix.pch"; sourceTree = "<group>"; };
+		83248B50548EDCAF79A7A0D6 /* Pods-Twurl-SwiftyJSON-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Twurl-SwiftyJSON-Private.xcconfig"; sourceTree = "<group>"; };
+		83EC720EDAD8CDAC35D86A2C /* Fetch.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Fetch.swift; path = Haneke/Fetch.swift; sourceTree = "<group>"; };
+		859E17310CA38FE59D939AD4 /* UIImageView+Haneke.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImageView+Haneke.swift"; path = "Haneke/UIImageView+Haneke.swift"; sourceTree = "<group>"; };
+		89201138962D2BEE3F91ED48 /* FontAwesome.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FontAwesome.swift; path = FontAwesome/FontAwesome.swift; sourceTree = "<group>"; };
+		8B68DDFFE88B5E00F9F22FAA /* DTTimePeriodCollection.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DTTimePeriodCollection.m; path = DateTools/DTTimePeriodCollection.m; sourceTree = "<group>"; };
+		8F167769A885E8788CBA430A /* Pods-Twurl-DateTools.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Twurl-DateTools.modulemap"; sourceTree = "<group>"; };
+		917181CA566BBFD61CBAB342 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		92F08D256FB228455C50B011 /* NSDate+DateTools.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDate+DateTools.h"; path = "DateTools/NSDate+DateTools.h"; sourceTree = "<group>"; };
+		94D99E4773CB124E314CB4ED /* Pods-Twurl-UIScrollView-InfiniteScroll.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Twurl-UIScrollView-InfiniteScroll.xcconfig"; sourceTree = "<group>"; };
+		96C9A0FC6B413954DC814669 /* UIScrollView+InfiniteScroll.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIScrollView+InfiniteScroll.h"; path = "Classes/UIScrollView+InfiniteScroll.h"; sourceTree = "<group>"; };
+		9E2D3F1C080AC0F20CF54F0C /* DTConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DTConstants.h; path = DateTools/DTConstants.h; sourceTree = "<group>"; };
+		A07A4F2B256911B97E3A9479 /* Pods-Twurl-UIScrollView-InfiniteScroll.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Twurl-UIScrollView-InfiniteScroll.modulemap"; sourceTree = "<group>"; };
+		A2EBFFBC3CA99BBDC33984A0 /* Pods-Twurl-NSDate+TimeAgo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Twurl-NSDate+TimeAgo-dummy.m"; sourceTree = "<group>"; };
+		A41B04DA6F93DAF1E513E674 /* Pods-Twurl-FontAwesome.swift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Twurl-FontAwesome.swift-prefix.pch"; sourceTree = "<group>"; };
+		A4258BD4411BE7AA5D4F3587 /* DTError.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DTError.m; path = DateTools/DTError.m; sourceTree = "<group>"; };
+		A4A0CF19AF71C519C47FFDBC /* Pods-Twurl-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Twurl-acknowledgements.plist"; sourceTree = "<group>"; };
+		A850C21210B92526B451640F /* Pods-Twurl.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Twurl.modulemap"; sourceTree = "<group>"; };
+		A905273ACD759F84E4F5F8C3 /* Pods-Twurl-Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Twurl-Alamofire-dummy.m"; sourceTree = "<group>"; };
+		A93EAEFBB5B727004FA15AE8 /* Upload.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Upload.swift; path = Source/Upload.swift; sourceTree = "<group>"; };
+		AA0793AE6CD69F473CE6F6C3 /* DiskFetcher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DiskFetcher.swift; path = Haneke/DiskFetcher.swift; sourceTree = "<group>"; };
+		ADEB79DEF41E1A45E345CD9A /* Pods-Twurl-DateTools-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Twurl-DateTools-Private.xcconfig"; sourceTree = "<group>"; };
+		AEDEF7D90803A9C6E926B1D9 /* Pods-Twurl-HanekeSwift-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Twurl-HanekeSwift-Private.xcconfig"; sourceTree = "<group>"; };
+		AF38E46B7E2B62ED4BC313C3 /* DTTimePeriodCollection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DTTimePeriodCollection.h; path = DateTools/DTTimePeriodCollection.h; sourceTree = "<group>"; };
+		B0CF7E079C5A5BCBA8BB90D7 /* UIButton+Haneke.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIButton+Haneke.swift"; path = "Haneke/UIButton+Haneke.swift"; sourceTree = "<group>"; };
+		B1D7BDC08E37CBD70C5D04C8 /* Pods-Twurl-DateTools.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Twurl-DateTools.xcconfig"; sourceTree = "<group>"; };
+		B64C87277D6DE888693CAA97 /* Pods-Twurl-DateTools-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Twurl-DateTools-dummy.m"; sourceTree = "<group>"; };
+		BB23737AB552AF2FBD068577 /* Pods-Twurl-HanekeSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Twurl-HanekeSwift-dummy.m"; sourceTree = "<group>"; };
+		BC413520EB424E4415E2CE48 /* Pods-Twurl-Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Twurl-Alamofire.modulemap"; sourceTree = "<group>"; };
+		C1DE8757EC95B539BC244669 /* CryptoSwiftMD5.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CryptoSwiftMD5.swift; path = Haneke/CryptoSwiftMD5.swift; sourceTree = "<group>"; };
+		C23DBE5BD37B138A5EF1FDA2 /* SWRevealViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SWRevealViewController.h; path = SWRevealViewController/SWRevealViewController.h; sourceTree = "<group>"; };
+		C400E5666E2811E0F2623DDD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		C52CEF444D4212F5FF827519 /* Pods-Twurl-SwiftyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Twurl-SwiftyJSON.modulemap"; sourceTree = "<group>"; };
+		C6A261B42255DC574F0C631D /* Pods-Twurl-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Twurl-dummy.m"; sourceTree = "<group>"; };
+		C752D17C23259400892C320E /* Pods-Twurl-SWRevealViewController-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Twurl-SWRevealViewController-Private.xcconfig"; sourceTree = "<group>"; };
+		C7AB21373003F90661D4C9F6 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		C916F5575B61BA5FF4D177A5 /* Pods-Twurl.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Twurl.debug.xcconfig"; sourceTree = "<group>"; };
+		CC90EDCEE5E70CE9F3AE2A9D /* Pods-Twurl-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Twurl-resources.sh"; sourceTree = "<group>"; };
+		CD6670008E2499BA7B3FA70E /* Pods-Twurl-Alamofire-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Twurl-Alamofire-Private.xcconfig"; sourceTree = "<group>"; };
+		D0F59234595684999F0D9C82 /* NSDate+DateTools.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDate+DateTools.m"; path = "DateTools/NSDate+DateTools.m"; sourceTree = "<group>"; };
+		D1D6031454352300251579C4 /* Pods-Twurl-SWRevealViewController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Twurl-SWRevealViewController-prefix.pch"; sourceTree = "<group>"; };
+		D3F082E457DFA68BDA09074C /* Pods-Twurl-UIScrollView-InfiniteScroll-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Twurl-UIScrollView-InfiniteScroll-umbrella.h"; sourceTree = "<group>"; };
+		D742D33ABB775528CF1CA1B8 /* Pods-Twurl-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Twurl-environment.h"; sourceTree = "<group>"; };
+		D752A4DCA7B942FE3A309756 /* SwiftyJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = Source/SwiftyJSON.swift; sourceTree = "<group>"; };
+		D75F321BF2E135AC9854BBCD /* Log.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Log.swift; path = Haneke/Log.swift; sourceTree = "<group>"; };
+		D9A9AE06F3E7300612B1EF9F /* Pods-Twurl-SwiftyJSON-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Twurl-SwiftyJSON-umbrella.h"; sourceTree = "<group>"; };
+		DA14B762D82C23559CA2FF91 /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
+		DB213A5A3F651F40F4F2D1BD /* Data.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Data.swift; path = Haneke/Data.swift; sourceTree = "<group>"; };
+		DC23DFB6DFF7E3512BD6BBBC /* Pods-Twurl-FontAwesome.swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Twurl-FontAwesome.swift-dummy.m"; sourceTree = "<group>"; };
+		DD69C55402BE337BE01AFAA8 /* Haneke.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Haneke.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE8E2A27D2A5EDC4D318FEFA /* UIImage+Haneke.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImage+Haneke.swift"; path = "Haneke/UIImage+Haneke.swift"; sourceTree = "<group>"; };
+		E3C63F8E2A21BFAF784D67FC /* DTTimePeriod.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DTTimePeriod.m; path = DateTools/DTTimePeriod.m; sourceTree = "<group>"; };
+		E57527336671950261A7A3D7 /* Pods-Twurl-SwiftyJSON-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Twurl-SwiftyJSON-dummy.m"; sourceTree = "<group>"; };
+		E72D196A012495011C9FF754 /* Haneke.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Haneke.swift; path = Haneke/Haneke.swift; sourceTree = "<group>"; };
+		F28AEE96DB77EDF6FD262605 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/CoreText.framework; sourceTree = DEVELOPER_DIR; };
+		F7131310FA99B7AED549DF2D /* DTTimePeriodChain.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DTTimePeriodChain.h; path = DateTools/DTTimePeriodChain.h; sourceTree = "<group>"; };
+		F9ED426D920682114DF0BB8F /* Pods-Twurl-SWRevealViewController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Twurl-SWRevealViewController-umbrella.h"; sourceTree = "<group>"; };
+		FA1D050542B4FBE52ACDC4C3 /* Pods-Twurl-SWRevealViewController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Twurl-SWRevealViewController.modulemap"; sourceTree = "<group>"; };
+		FA5A50950E820DC5DD2DBE6E /* Pods-Twurl.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Twurl.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1B59C84E9E14ECF22C6CAE14 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36086D17498FF948D0C7EE22 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC27CA0B42510033C667E226 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		598D65F64C5C7695BF2820B9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FC13608B802804962177297 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		675F7DA16251A1C1F53B2198 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39546F730F6665B415860930 /* CoreGraphics.framework in Frameworks */,
+				548F49D40CD8E31B4218C220 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70F6B9BAB807560F0D27CF46 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC07B2E0AE9A048F6C6DAE44 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97F132922FCACA7B276A625C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBAC517FC0124473466B6303 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAE3F185F30DA885BF9F10C6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6E2612C76470753AFA28B8D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1385E064A67FF3991793DBB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F93320EC8BD3E4F5C4C47B79 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9DCF95788B9E17625A532C8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70949687F3645C743D23F94C /* CoreText.framework in Frameworks */,
+				B5DF71A4C9990721EEE2684A /* Foundation.framework in Frameworks */,
+				2B27574D3FAE7840F62D8762 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC0F9C5B4EC8083F79A2C366 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				319F045B01BA721B2480C1B2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04D5E68E6DF0C84864513C6A = {
+			isa = PBXGroup;
+			children = (
+				0B27F9DB2441FAA2FD4B2BAA /* Podfile */,
+				6405D3E77F558EBCEAA54825 /* Frameworks */,
+				A25B7AA75BF75EFC2E3BB3C0 /* Pods */,
+				4A99FB09C5252379913FD22E /* Products */,
+				2DBE9A46F9F3F1A2168835A0 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		0680A4466C7981AA539CC5A5 /* SWRevealViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C23DBE5BD37B138A5EF1FDA2 /* SWRevealViewController.h */,
+				7FA6CE6AA13C6F7A95DB39A4 /* SWRevealViewController.m */,
+				36753FAE39454C6C4DB25D0B /* Support Files */,
+			);
+			path = SWRevealViewController;
+			sourceTree = "<group>";
+		};
+		12E97F9B47A8D456DD060600 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				C7AB21373003F90661D4C9F6 /* CoreGraphics.framework */,
+				F28AEE96DB77EDF6FD262605 /* CoreText.framework */,
+				C400E5666E2811E0F2623DDD /* Foundation.framework */,
+				23B18E09AEB00329097B6B94 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		17983498DACE1B0CAD73C143 /* FontAwesome.swift */ = {
+			isa = PBXGroup;
+			children = (
+				0BAE564B46A39F0AB4D354FA /* Enum.swift */,
+				89201138962D2BEE3F91ED48 /* FontAwesome.swift */,
+				566E1A1479C5848F34761EDF /* Resources */,
+				2C01C59A1F106560D40E143F /* Support Files */,
+			);
+			path = FontAwesome.swift;
+			sourceTree = "<group>";
+		};
+		1AEFC01B9EBE6F8AA5DCF455 /* Alamofire */ = {
+			isa = PBXGroup;
+			children = (
+				132F6E403D20BC6587EFD5FD /* Alamofire.swift */,
+				2236D8AAAFADC711E3E5747F /* Download.swift */,
+				0C880BE7F20CA2AF59B4E087 /* Manager.swift */,
+				DA14B762D82C23559CA2FF91 /* ParameterEncoding.swift */,
+				768318E0D41E02152A4C4EB0 /* Request.swift */,
+				1D33EA69557EBA0E560F6ABE /* ResponseSerialization.swift */,
+				A93EAEFBB5B727004FA15AE8 /* Upload.swift */,
+				32FDA26B8AFA494E4CA828DA /* Validation.swift */,
+				F29776F78F74B6AA634C250C /* Support Files */,
+			);
+			path = Alamofire;
+			sourceTree = "<group>";
+		};
+		20FD94AE5D63070C9691FD8E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4C32A1E17B67B72C9C41703C /* NSDateTimeAgo.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		2C01C59A1F106560D40E143F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6789452C6A372DB126E673CB /* Info.plist */,
+				6B1ED58B7042C952E8D8A499 /* Pods-Twurl-FontAwesome.swift.modulemap */,
+				4DEB99145C2CFE44E94732BB /* Pods-Twurl-FontAwesome.swift.xcconfig */,
+				1137212A1DCD4CC5C15CA05C /* Pods-Twurl-FontAwesome.swift-Private.xcconfig */,
+				DC23DFB6DFF7E3512BD6BBBC /* Pods-Twurl-FontAwesome.swift-dummy.m */,
+				A41B04DA6F93DAF1E513E674 /* Pods-Twurl-FontAwesome.swift-prefix.pch */,
+				4990FF203D5E7D313B9723B6 /* Pods-Twurl-FontAwesome.swift-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-Twurl-FontAwesome.swift";
+			sourceTree = "<group>";
+		};
+		2DBE9A46F9F3F1A2168835A0 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				710052061D1F76F87086C326 /* Pods-Twurl */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		36753FAE39454C6C4DB25D0B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				42FF4E45A449C664258D36DA /* Info.plist */,
+				FA1D050542B4FBE52ACDC4C3 /* Pods-Twurl-SWRevealViewController.modulemap */,
+				1109B04E8A12FB8258743EF2 /* Pods-Twurl-SWRevealViewController.xcconfig */,
+				C752D17C23259400892C320E /* Pods-Twurl-SWRevealViewController-Private.xcconfig */,
+				58A61F53FA802D2F85CD5C13 /* Pods-Twurl-SWRevealViewController-dummy.m */,
+				D1D6031454352300251579C4 /* Pods-Twurl-SWRevealViewController-prefix.pch */,
+				F9ED426D920682114DF0BB8F /* Pods-Twurl-SWRevealViewController-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-Twurl-SWRevealViewController";
+			sourceTree = "<group>";
+		};
+		4A99FB09C5252379913FD22E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				677AD515DA309904FDF58E65 /* Alamofire.framework */,
+				1BE582F4EBD82195ABCAB045 /* DateTools.framework */,
+				47B653685A269BF0FC16B932 /* FontAwesome.swift.bundle */,
+				6A83568EB8A3901BF6122480 /* FontAwesome_swift.framework */,
+				DD69C55402BE337BE01AFAA8 /* Haneke.framework */,
+				096BD875048253B9DB3F62BF /* NSDate_TimeAgo.framework */,
+				30344FE23EF3BDC7656AF2C4 /* Pods_Twurl.framework */,
+				2FA4524927E7F1900902D921 /* SWRevealViewController.framework */,
+				2B2970F79F451635E0096CAA /* SwiftyJSON.framework */,
+				7F6445283A9EF49C3D888904 /* UIScrollView_InfiniteScroll.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		566E1A1479C5848F34761EDF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				55841CFEAC1021CE55F960B1 /* FontAwesome.otf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		6405D3E77F558EBCEAA54825 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				12E97F9B47A8D456DD060600 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		710052061D1F76F87086C326 /* Pods-Twurl */ = {
+			isa = PBXGroup;
+			children = (
+				1ED3B3D0CF343ACD78EDF814 /* Info.plist */,
+				A850C21210B92526B451640F /* Pods-Twurl.modulemap */,
+				5E1E8C665D82B073695953B0 /* Pods-Twurl-acknowledgements.markdown */,
+				A4A0CF19AF71C519C47FFDBC /* Pods-Twurl-acknowledgements.plist */,
+				C6A261B42255DC574F0C631D /* Pods-Twurl-dummy.m */,
+				D742D33ABB775528CF1CA1B8 /* Pods-Twurl-environment.h */,
+				0C9B25F0DC1306801C686FD3 /* Pods-Twurl-frameworks.sh */,
+				CC90EDCEE5E70CE9F3AE2A9D /* Pods-Twurl-resources.sh */,
+				19E354F69F2D1D9CF5CC33D3 /* Pods-Twurl-umbrella.h */,
+				C916F5575B61BA5FF4D177A5 /* Pods-Twurl.debug.xcconfig */,
+				FA5A50950E820DC5DD2DBE6E /* Pods-Twurl.release.xcconfig */,
+			);
+			name = "Pods-Twurl";
+			path = "Target Support Files/Pods-Twurl";
+			sourceTree = "<group>";
+		};
+		8264E4FDA93444EAFF758D7F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				050709E0ADE560245F13E368 /* Info.plist */,
+				8F167769A885E8788CBA430A /* Pods-Twurl-DateTools.modulemap */,
+				B1D7BDC08E37CBD70C5D04C8 /* Pods-Twurl-DateTools.xcconfig */,
+				ADEB79DEF41E1A45E345CD9A /* Pods-Twurl-DateTools-Private.xcconfig */,
+				B64C87277D6DE888693CAA97 /* Pods-Twurl-DateTools-dummy.m */,
+				79E3D3CE56D68C97DBACD94D /* Pods-Twurl-DateTools-prefix.pch */,
+				571708A8263CA6FA4BDA07B6 /* Pods-Twurl-DateTools-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-Twurl-DateTools";
+			sourceTree = "<group>";
+		};
+		9F1BF55D0DED01873CED348F /* NSDate+TimeAgo */ = {
+			isa = PBXGroup;
+			children = (
+				7EAEFA36BC53100DDABD89C1 /* NSDate+TimeAgo.h */,
+				22AB12B4E068511E8A30757A /* NSDate+TimeAgo.m */,
+				20FD94AE5D63070C9691FD8E /* Resources */,
+				B7C319D0EABA6B434B07D7E6 /* Support Files */,
+			);
+			path = "NSDate+TimeAgo";
+			sourceTree = "<group>";
+		};
+		A25B7AA75BF75EFC2E3BB3C0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1AEFC01B9EBE6F8AA5DCF455 /* Alamofire */,
+				D33DD4397E949E31E79CEC12 /* DateTools */,
+				17983498DACE1B0CAD73C143 /* FontAwesome.swift */,
+				FB7AFC967234A988A184D5CF /* HanekeSwift */,
+				9F1BF55D0DED01873CED348F /* NSDate+TimeAgo */,
+				0680A4466C7981AA539CC5A5 /* SWRevealViewController */,
+				C174288F4C50DD3B70C9AF60 /* SwiftyJSON */,
+				BDAD70F46BFD78C26688E44E /* UIScrollView-InfiniteScroll */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B7C319D0EABA6B434B07D7E6 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				71C417E4B8937FEB63E02730 /* Info.plist */,
+				63A9E886667E1C3741AC4D01 /* Pods-Twurl-NSDate+TimeAgo.modulemap */,
+				1F9F38ACF1DEAB58352CC695 /* Pods-Twurl-NSDate+TimeAgo.xcconfig */,
+				5B707F4CE09C9A8A39274128 /* Pods-Twurl-NSDate+TimeAgo-Private.xcconfig */,
+				A2EBFFBC3CA99BBDC33984A0 /* Pods-Twurl-NSDate+TimeAgo-dummy.m */,
+				31B8CB7D1E3B102EBF8362D4 /* Pods-Twurl-NSDate+TimeAgo-prefix.pch */,
+				3C1A0FDA00231C9692F882D1 /* Pods-Twurl-NSDate+TimeAgo-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-Twurl-NSDate+TimeAgo";
+			sourceTree = "<group>";
+		};
+		B8D89FA79B9D55205C89A740 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				45A6B1A63099187AAD822900 /* Info.plist */,
+				A07A4F2B256911B97E3A9479 /* Pods-Twurl-UIScrollView-InfiniteScroll.modulemap */,
+				94D99E4773CB124E314CB4ED /* Pods-Twurl-UIScrollView-InfiniteScroll.xcconfig */,
+				2AFAB6006B5B85A401E059AA /* Pods-Twurl-UIScrollView-InfiniteScroll-Private.xcconfig */,
+				4CEAD718E8003007A2ADDE45 /* Pods-Twurl-UIScrollView-InfiniteScroll-dummy.m */,
+				5540BD021C46972FE0C85DF1 /* Pods-Twurl-UIScrollView-InfiniteScroll-prefix.pch */,
+				D3F082E457DFA68BDA09074C /* Pods-Twurl-UIScrollView-InfiniteScroll-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-Twurl-UIScrollView-InfiniteScroll";
+			sourceTree = "<group>";
+		};
+		BDAD70F46BFD78C26688E44E /* UIScrollView-InfiniteScroll */ = {
+			isa = PBXGroup;
+			children = (
+				96C9A0FC6B413954DC814669 /* UIScrollView+InfiniteScroll.h */,
+				24514908889F16FD59175B76 /* UIScrollView+InfiniteScroll.m */,
+				B8D89FA79B9D55205C89A740 /* Support Files */,
+			);
+			path = "UIScrollView-InfiniteScroll";
+			sourceTree = "<group>";
+		};
+		C174288F4C50DD3B70C9AF60 /* SwiftyJSON */ = {
+			isa = PBXGroup;
+			children = (
+				D752A4DCA7B942FE3A309756 /* SwiftyJSON.swift */,
+				C7D9C15BB9AA2FA9BC5734BE /* Support Files */,
+			);
+			path = SwiftyJSON;
+			sourceTree = "<group>";
+		};
+		C7D9C15BB9AA2FA9BC5734BE /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5CA1E1C0DC900EF8A9152949 /* Info.plist */,
+				C52CEF444D4212F5FF827519 /* Pods-Twurl-SwiftyJSON.modulemap */,
+				54A4166F62AD96C58BF828CC /* Pods-Twurl-SwiftyJSON.xcconfig */,
+				83248B50548EDCAF79A7A0D6 /* Pods-Twurl-SwiftyJSON-Private.xcconfig */,
+				E57527336671950261A7A3D7 /* Pods-Twurl-SwiftyJSON-dummy.m */,
+				81B78D23734BBD171946745A /* Pods-Twurl-SwiftyJSON-prefix.pch */,
+				D9A9AE06F3E7300612B1EF9F /* Pods-Twurl-SwiftyJSON-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-Twurl-SwiftyJSON";
+			sourceTree = "<group>";
+		};
+		D33DD4397E949E31E79CEC12 /* DateTools */ = {
+			isa = PBXGroup;
+			children = (
+				9E2D3F1C080AC0F20CF54F0C /* DTConstants.h */,
+				0164C8D52C4D83C5130DE04D /* DTError.h */,
+				A4258BD4411BE7AA5D4F3587 /* DTError.m */,
+				03531D6C951C036693BADE13 /* DTTimePeriod.h */,
+				E3C63F8E2A21BFAF784D67FC /* DTTimePeriod.m */,
+				F7131310FA99B7AED549DF2D /* DTTimePeriodChain.h */,
+				22379DAC451DE0BCC96FF014 /* DTTimePeriodChain.m */,
+				AF38E46B7E2B62ED4BC313C3 /* DTTimePeriodCollection.h */,
+				8B68DDFFE88B5E00F9F22FAA /* DTTimePeriodCollection.m */,
+				576AB0E08ECB336AFDF37C17 /* DTTimePeriodGroup.h */,
+				149DDAFE5AE615D652C396BD /* DTTimePeriodGroup.m */,
+				77253B164C2DF8771B3EA2F3 /* DateTools.h */,
+				92F08D256FB228455C50B011 /* NSDate+DateTools.h */,
+				D0F59234595684999F0D9C82 /* NSDate+DateTools.m */,
+				EA0F80F3BE3C5A791BF58D59 /* Resources */,
+				8264E4FDA93444EAFF758D7F /* Support Files */,
+			);
+			path = DateTools;
+			sourceTree = "<group>";
+		};
+		D64612A60FFC1DFCD9F764A4 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3E7BDD1D996B8396C22C3B26 /* Info.plist */,
+				4568B66D7883C0423A7BCB4E /* Pods-Twurl-HanekeSwift.modulemap */,
+				7D94F9923314644F1CC3AA85 /* Pods-Twurl-HanekeSwift.xcconfig */,
+				AEDEF7D90803A9C6E926B1D9 /* Pods-Twurl-HanekeSwift-Private.xcconfig */,
+				BB23737AB552AF2FBD068577 /* Pods-Twurl-HanekeSwift-dummy.m */,
+				4D2F9221129CACEB74197C8D /* Pods-Twurl-HanekeSwift-prefix.pch */,
+				3DA72EBEF59C65165B210872 /* Pods-Twurl-HanekeSwift-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-Twurl-HanekeSwift";
+			sourceTree = "<group>";
+		};
+		EA0F80F3BE3C5A791BF58D59 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				18CFA20F0D4D5F9C70F1A4ED /* DateTools.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		F29776F78F74B6AA634C250C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				917181CA566BBFD61CBAB342 /* Info.plist */,
+				BC413520EB424E4415E2CE48 /* Pods-Twurl-Alamofire.modulemap */,
+				4A59DF179A6342056713E5CA /* Pods-Twurl-Alamofire.xcconfig */,
+				CD6670008E2499BA7B3FA70E /* Pods-Twurl-Alamofire-Private.xcconfig */,
+				A905273ACD759F84E4F5F8C3 /* Pods-Twurl-Alamofire-dummy.m */,
+				20D0BB6C3D463B4375514FB4 /* Pods-Twurl-Alamofire-prefix.pch */,
+				033C0255B2451EA323129666 /* Pods-Twurl-Alamofire-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-Twurl-Alamofire";
+			sourceTree = "<group>";
+		};
+		FB7AFC967234A988A184D5CF /* HanekeSwift */ = {
+			isa = PBXGroup;
+			children = (
+				7D0B4042D2CC48F738C1F784 /* CGSize+Swift.swift */,
+				2C87AA122FC88CA493CD4A36 /* Cache.swift */,
+				C1DE8757EC95B539BC244669 /* CryptoSwiftMD5.swift */,
+				DB213A5A3F651F40F4F2D1BD /* Data.swift */,
+				2BE09368A127780D95DFAAFF /* DiskCache.swift */,
+				AA0793AE6CD69F473CE6F6C3 /* DiskFetcher.swift */,
+				83EC720EDAD8CDAC35D86A2C /* Fetch.swift */,
+				405FC603E141BF9F898C35BB /* Fetcher.swift */,
+				2762531A0558264C21895444 /* Format.swift */,
+				E72D196A012495011C9FF754 /* Haneke.swift */,
+				D75F321BF2E135AC9854BBCD /* Log.swift */,
+				44780C0F9124627C234FE968 /* NSFileManager+Haneke.swift */,
+				6FF5198F25DCF826236F22DC /* NSHTTPURLResponse+Haneke.swift */,
+				29518E063011955CED5ACD09 /* NetworkFetcher.swift */,
+				1BC4E09AB6D283408A4274D3 /* String+Haneke.swift */,
+				B0CF7E079C5A5BCBA8BB90D7 /* UIButton+Haneke.swift */,
+				DE8E2A27D2A5EDC4D318FEFA /* UIImage+Haneke.swift */,
+				859E17310CA38FE59D939AD4 /* UIImageView+Haneke.swift */,
+				78240872BA21EC108FBBFEB2 /* UIView+Haneke.swift */,
+				D64612A60FFC1DFCD9F764A4 /* Support Files */,
+			);
+			path = HanekeSwift;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1DD64D9BA5D2BE6FEDEA3307 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89222F4F462EC7D740FB9041 /* Pods-Twurl-SwiftyJSON-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D948914FC8524DAEC27302D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC0FB1BBDB708C74C75E0A30 /* Pods-Twurl-UIScrollView-InfiniteScroll-umbrella.h in Headers */,
+				A84CAE4A3D0F19BA7E5AEBAC /* UIScrollView+InfiniteScroll.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		82BA426475C9A44A9A3614D0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E75C4DE61114C68D74DA2DD /* Pods-Twurl-Alamofire-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		864EC9C723D5C8DC907E9544 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				730DDC45735576A8E2750961 /* Pods-Twurl-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		875D80BD8CC09FBB28E1E1D1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB758F5FED676F5FAD5F8BBE /* NSDate+TimeAgo.h in Headers */,
+				DE403870534EB2E8C35749CF /* Pods-Twurl-NSDate+TimeAgo-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9369F2FB84630ADA6BBF4E0B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B390B9A2D4FC321DB794C625 /* Pods-Twurl-SWRevealViewController-umbrella.h in Headers */,
+				A596924CF5A0544A82AB063B /* SWRevealViewController.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B791A7819DD4A5A83065DFCF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55EF28978F11C7F232E49AD5 /* Pods-Twurl-FontAwesome.swift-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDB3B1930598758B33650C48 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E548990EEEB632D353258224 /* Pods-Twurl-HanekeSwift-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA97FB1157AD26951159F10F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				002FD402A27770BBA2B1E2E0 /* DTConstants.h in Headers */,
+				FF423E03A8BE789E36DC8E4A /* DTError.h in Headers */,
+				50C5B5CCC8A70AE516953F40 /* DTTimePeriod.h in Headers */,
+				80AB19565E8DECC3C103BF4E /* DTTimePeriodChain.h in Headers */,
+				EEEDF72BA7981A4FA6407BE6 /* DTTimePeriodCollection.h in Headers */,
+				ADC63FC2864047E30B582840 /* DTTimePeriodGroup.h in Headers */,
+				ECFF6583EA094FDB27502002 /* DateTools.h in Headers */,
+				38D69516A8FE28778370CF2C /* NSDate+DateTools.h in Headers */,
+				6D3EB1513988CE95EC9E2A28 /* Pods-Twurl-DateTools-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		05D81F3C6A39712B897F59A7 /* Pods-Twurl-SwiftyJSON */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5678CD0B9CD2AF891EC61B5 /* Build configuration list for PBXNativeTarget "Pods-Twurl-SwiftyJSON" */;
+			buildPhases = (
+				7A1BB3B12F4221BDCBC3A6F8 /* Sources */,
+				FC0F9C5B4EC8083F79A2C366 /* Frameworks */,
+				1DD64D9BA5D2BE6FEDEA3307 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Twurl-SwiftyJSON";
+			productName = "Pods-Twurl-SwiftyJSON";
+			productReference = 2B2970F79F451635E0096CAA /* SwiftyJSON.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		4D6157B0125CABAE98522C57 /* Pods-Twurl-DateTools */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 71363CFA4418A8E5DA3070EA /* Build configuration list for PBXNativeTarget "Pods-Twurl-DateTools" */;
+			buildPhases = (
+				70BEE74DD6F9B935B9B38EC0 /* Sources */,
+				97F132922FCACA7B276A625C /* Frameworks */,
+				DA97FB1157AD26951159F10F /* Headers */,
+				675B76A0F842A6630AB276BB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Twurl-DateTools";
+			productName = "Pods-Twurl-DateTools";
+			productReference = 1BE582F4EBD82195ABCAB045 /* DateTools.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6704700F60DE038B7C0DF7BF /* Pods-Twurl-SWRevealViewController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B70DF64BB6820CCA41A42D10 /* Build configuration list for PBXNativeTarget "Pods-Twurl-SWRevealViewController" */;
+			buildPhases = (
+				67523A93BC222F8CB41A5123 /* Sources */,
+				675F7DA16251A1C1F53B2198 /* Frameworks */,
+				9369F2FB84630ADA6BBF4E0B /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Twurl-SWRevealViewController";
+			productName = "Pods-Twurl-SWRevealViewController";
+			productReference = 2FA4524927E7F1900902D921 /* SWRevealViewController.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		7F13BF5E52E14F371878686E /* Pods-Twurl-FontAwesome.swift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 230B5F4B2CD7B9414A1F7A5F /* Build configuration list for PBXNativeTarget "Pods-Twurl-FontAwesome.swift" */;
+			buildPhases = (
+				6EED755D1E821178758A6F42 /* Sources */,
+				F9DCF95788B9E17625A532C8 /* Frameworks */,
+				BA2F40833B19751B71B8C0EA /* Resources */,
+				B791A7819DD4A5A83065DFCF /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7E3F627E8AC10427A69D8011 /* PBXTargetDependency */,
+			);
+			name = "Pods-Twurl-FontAwesome.swift";
+			productName = "Pods-Twurl-FontAwesome.swift";
+			productReference = 6A83568EB8A3901BF6122480 /* FontAwesome_swift.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		89B5DA211F6DFA1B0F5AEB14 /* Pods-Twurl-Alamofire */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 449CF5CDFFA74F4AB0C2AE64 /* Build configuration list for PBXNativeTarget "Pods-Twurl-Alamofire" */;
+			buildPhases = (
+				A7C91D1C6FE05A5AB3D7455C /* Sources */,
+				70F6B9BAB807560F0D27CF46 /* Frameworks */,
+				82BA426475C9A44A9A3614D0 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Twurl-Alamofire";
+			productName = "Pods-Twurl-Alamofire";
+			productReference = 677AD515DA309904FDF58E65 /* Alamofire.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		8A3A741A1C7A47F30FC7D488 /* Pods-Twurl-UIScrollView-InfiniteScroll */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D2D324D73AA754BD7233971D /* Build configuration list for PBXNativeTarget "Pods-Twurl-UIScrollView-InfiniteScroll" */;
+			buildPhases = (
+				56AAEACAF4F30DB714DA0CEF /* Sources */,
+				CAE3F185F30DA885BF9F10C6 /* Frameworks */,
+				5D948914FC8524DAEC27302D /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Twurl-UIScrollView-InfiniteScroll";
+			productName = "Pods-Twurl-UIScrollView-InfiniteScroll";
+			productReference = 7F6445283A9EF49C3D888904 /* UIScrollView_InfiniteScroll.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CA58704D7F1803B7B4852A9B /* Pods-Twurl-NSDate+TimeAgo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5F57DC9402D2022F06C26DB4 /* Build configuration list for PBXNativeTarget "Pods-Twurl-NSDate+TimeAgo" */;
+			buildPhases = (
+				359D9815D8EE186EEDB757C2 /* Sources */,
+				36086D17498FF948D0C7EE22 /* Frameworks */,
+				875D80BD8CC09FBB28E1E1D1 /* Headers */,
+				2722149522AEBCA0FBF56452 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Twurl-NSDate+TimeAgo";
+			productName = "Pods-Twurl-NSDate+TimeAgo";
+			productReference = 096BD875048253B9DB3F62BF /* NSDate_TimeAgo.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D10475343017523601D8EDE3 /* Pods-Twurl */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C2A83C4390F8102A001DE194 /* Build configuration list for PBXNativeTarget "Pods-Twurl" */;
+			buildPhases = (
+				27C6C6BEE107B6C737D00D5F /* Sources */,
+				598D65F64C5C7695BF2820B9 /* Frameworks */,
+				864EC9C723D5C8DC907E9544 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F218096AC3E6EB5C49D9E755 /* PBXTargetDependency */,
+				9994038FDC38E694D1656550 /* PBXTargetDependency */,
+				AA1214898FFC97324C3EA787 /* PBXTargetDependency */,
+				59E85B796762B28FFAA09F54 /* PBXTargetDependency */,
+				78DE491D2583F18D5E7F6327 /* PBXTargetDependency */,
+				08AE59291DDA9D8AA6193863 /* PBXTargetDependency */,
+				81549D8017815E53BD31D153 /* PBXTargetDependency */,
+				9BDDAA33C3CE2682A17479BB /* PBXTargetDependency */,
+			);
+			name = "Pods-Twurl";
+			productName = "Pods-Twurl";
+			productReference = 30344FE23EF3BDC7656AF2C4 /* Pods_Twurl.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D2EF31E1301062C310C6D295 /* Pods-Twurl-HanekeSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9E9D2BD26F5CA54995B5046D /* Build configuration list for PBXNativeTarget "Pods-Twurl-HanekeSwift" */;
+			buildPhases = (
+				E46515FD528AF559711F897D /* Sources */,
+				E1385E064A67FF3991793DBB /* Frameworks */,
+				BDB3B1930598758B33650C48 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Twurl-HanekeSwift";
+			productName = "Pods-Twurl-HanekeSwift";
+			productReference = DD69C55402BE337BE01AFAA8 /* Haneke.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D6B9EEE58DF887177F084031 /* Pods-Twurl-FontAwesome.swift-FontAwesome.swift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9E0451F42C77DDB62197DD11 /* Build configuration list for PBXNativeTarget "Pods-Twurl-FontAwesome.swift-FontAwesome.swift" */;
+			buildPhases = (
+				CFF9797634EA2308158E09DB /* Sources */,
+				1B59C84E9E14ECF22C6CAE14 /* Frameworks */,
+				C2773300FA18071301A22E67 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Twurl-FontAwesome.swift-FontAwesome.swift";
+			productName = "Pods-Twurl-FontAwesome.swift-FontAwesome.swift";
+			productReference = 47B653685A269BF0FC16B932 /* FontAwesome.swift.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		543FFD1E03181981E6060091 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+			};
+			buildConfigurationList = F64AD79274E6E135B60A7E1A /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 04D5E68E6DF0C84864513C6A;
+			productRefGroup = 4A99FB09C5252379913FD22E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D10475343017523601D8EDE3 /* Pods-Twurl */,
+				89B5DA211F6DFA1B0F5AEB14 /* Pods-Twurl-Alamofire */,
+				4D6157B0125CABAE98522C57 /* Pods-Twurl-DateTools */,
+				7F13BF5E52E14F371878686E /* Pods-Twurl-FontAwesome.swift */,
+				D6B9EEE58DF887177F084031 /* Pods-Twurl-FontAwesome.swift-FontAwesome.swift */,
+				D2EF31E1301062C310C6D295 /* Pods-Twurl-HanekeSwift */,
+				CA58704D7F1803B7B4852A9B /* Pods-Twurl-NSDate+TimeAgo */,
+				6704700F60DE038B7C0DF7BF /* Pods-Twurl-SWRevealViewController */,
+				05D81F3C6A39712B897F59A7 /* Pods-Twurl-SwiftyJSON */,
+				8A3A741A1C7A47F30FC7D488 /* Pods-Twurl-UIScrollView-InfiniteScroll */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2722149522AEBCA0FBF56452 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8AEB42809B498C247FACA116 /* NSDateTimeAgo.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		675B76A0F842A6630AB276BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B7F3D970F6FEB510FBE9922 /* DateTools.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA2F40833B19751B71B8C0EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0FFAFC8E1BC1E4C468A37F2 /* FontAwesome.swift.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2773300FA18071301A22E67 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				789FB59522D368D100615F64 /* FontAwesome.otf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		27C6C6BEE107B6C737D00D5F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C9C8180B1F98E3D52699D37 /* Pods-Twurl-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		359D9815D8EE186EEDB757C2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5AC9D065490EAAAB5F67A3B6 /* NSDate+TimeAgo.m in Sources */,
+				DD8420DCABA3A860F3FB97AD /* Pods-Twurl-NSDate+TimeAgo-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56AAEACAF4F30DB714DA0CEF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62A4D73AB71E87B3D91C3DF5 /* Pods-Twurl-UIScrollView-InfiniteScroll-dummy.m in Sources */,
+				45B98F5EF8B031D731A7EB5D /* UIScrollView+InfiniteScroll.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		67523A93BC222F8CB41A5123 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E6662D54348B26105A717DE /* Pods-Twurl-SWRevealViewController-dummy.m in Sources */,
+				B460F57F6445CD1EFC75277F /* SWRevealViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6EED755D1E821178758A6F42 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADFE1EB1F7D538F905411287 /* Enum.swift in Sources */,
+				B8D373A538BF83889DD6337A /* FontAwesome.swift in Sources */,
+				CB76CE192D6F65FFFEA15D67 /* Pods-Twurl-FontAwesome.swift-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70BEE74DD6F9B935B9B38EC0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3C841EA41F78B488EA44FC3 /* DTError.m in Sources */,
+				22372261AEBD513000237A86 /* DTTimePeriod.m in Sources */,
+				4B9B4A04165F19DD484ABA2A /* DTTimePeriodChain.m in Sources */,
+				3762C1B585D343D2FFF824DE /* DTTimePeriodCollection.m in Sources */,
+				F2EF8FCF12480C9A90A60F60 /* DTTimePeriodGroup.m in Sources */,
+				C3DA63E90D95DD3F5CB602C9 /* NSDate+DateTools.m in Sources */,
+				3DAA15B0EC9D084B52060BDC /* Pods-Twurl-DateTools-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7A1BB3B12F4221BDCBC3A6F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				704AC7B3304F3344CEFA50E4 /* Pods-Twurl-SwiftyJSON-dummy.m in Sources */,
+				65B086714BD8DE29E37F8722 /* SwiftyJSON.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7C91D1C6FE05A5AB3D7455C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				905674CB991AA80AB597AB3F /* Alamofire.swift in Sources */,
+				D6B5144360CEE9DFBEE09781 /* Download.swift in Sources */,
+				D589E07CD746D63240306B11 /* Manager.swift in Sources */,
+				DC9F97CAFA1EA2FBB8E706AE /* ParameterEncoding.swift in Sources */,
+				E26CC49323410751EE3EEBE3 /* Pods-Twurl-Alamofire-dummy.m in Sources */,
+				49796D5925729C22AA1AAD82 /* Request.swift in Sources */,
+				079547D60E71939B4380748C /* ResponseSerialization.swift in Sources */,
+				6A9678E5AB3F62A93B99457B /* Upload.swift in Sources */,
+				CB2661DE6D81AD1E8300D422 /* Validation.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFF9797634EA2308158E09DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E46515FD528AF559711F897D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				413C668375D96FE5162B65B8 /* CGSize+Swift.swift in Sources */,
+				89CBE6CC1F5CF318A9A18DD4 /* Cache.swift in Sources */,
+				0FB6B7FD6BE98F6E97862017 /* CryptoSwiftMD5.swift in Sources */,
+				8E10641432F8B494A140195B /* Data.swift in Sources */,
+				142F5D4E2B1FC18DCAD41151 /* DiskCache.swift in Sources */,
+				6F89E51E815FE77D591CD120 /* DiskFetcher.swift in Sources */,
+				830FAAC539F94BEAE8435473 /* Fetch.swift in Sources */,
+				331C90772FEEF5ABF9498B84 /* Fetcher.swift in Sources */,
+				4C862C401BCF2D9970A91CA7 /* Format.swift in Sources */,
+				7EA0504E932AA4E762FCED77 /* Haneke.swift in Sources */,
+				C384196642AF1663CADBEFBD /* Log.swift in Sources */,
+				E629EA8D7A1E075FF1C0ADEE /* NSFileManager+Haneke.swift in Sources */,
+				5E23C3E56D04F9E47B2D7F89 /* NSHTTPURLResponse+Haneke.swift in Sources */,
+				CE6FFE73B913DE228B3E0D33 /* NetworkFetcher.swift in Sources */,
+				F5B5D6053FAE53D92C2625B0 /* Pods-Twurl-HanekeSwift-dummy.m in Sources */,
+				2A25324BBD6C8CC3813955D4 /* String+Haneke.swift in Sources */,
+				5B8665A063CFC71E97A8AEEE /* UIButton+Haneke.swift in Sources */,
+				7E9267AD1A8D3E15B2673348 /* UIImage+Haneke.swift in Sources */,
+				F83AA082C961523679498138 /* UIImageView+Haneke.swift in Sources */,
+				F389AB29E5781E3A6714AA0D /* UIView+Haneke.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		08AE59291DDA9D8AA6193863 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Twurl-SWRevealViewController";
+			target = 6704700F60DE038B7C0DF7BF /* Pods-Twurl-SWRevealViewController */;
+			targetProxy = 62A96C05B1FEEE0118C6B9BD /* PBXContainerItemProxy */;
+		};
+		59E85B796762B28FFAA09F54 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Twurl-HanekeSwift";
+			target = D2EF31E1301062C310C6D295 /* Pods-Twurl-HanekeSwift */;
+			targetProxy = B226455A420E344EDCE5991A /* PBXContainerItemProxy */;
+		};
+		78DE491D2583F18D5E7F6327 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Twurl-NSDate+TimeAgo";
+			target = CA58704D7F1803B7B4852A9B /* Pods-Twurl-NSDate+TimeAgo */;
+			targetProxy = 7AEB11CC8E9A7DCF182B3F82 /* PBXContainerItemProxy */;
+		};
+		7E3F627E8AC10427A69D8011 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Twurl-FontAwesome.swift-FontAwesome.swift";
+			target = D6B9EEE58DF887177F084031 /* Pods-Twurl-FontAwesome.swift-FontAwesome.swift */;
+			targetProxy = 2A6ADD819F0B894631A1EBFD /* PBXContainerItemProxy */;
+		};
+		81549D8017815E53BD31D153 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Twurl-SwiftyJSON";
+			target = 05D81F3C6A39712B897F59A7 /* Pods-Twurl-SwiftyJSON */;
+			targetProxy = 07351B61D1B9BE6485AE1144 /* PBXContainerItemProxy */;
+		};
+		9994038FDC38E694D1656550 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Twurl-DateTools";
+			target = 4D6157B0125CABAE98522C57 /* Pods-Twurl-DateTools */;
+			targetProxy = D52E828291B5D01E2D27F272 /* PBXContainerItemProxy */;
+		};
+		9BDDAA33C3CE2682A17479BB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Twurl-UIScrollView-InfiniteScroll";
+			target = 8A3A741A1C7A47F30FC7D488 /* Pods-Twurl-UIScrollView-InfiniteScroll */;
+			targetProxy = FE110B7FDE05C718FD0FD222 /* PBXContainerItemProxy */;
+		};
+		AA1214898FFC97324C3EA787 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Twurl-FontAwesome.swift";
+			target = 7F13BF5E52E14F371878686E /* Pods-Twurl-FontAwesome.swift */;
+			targetProxy = 541B6FFD72128FE2BCF60CE9 /* PBXContainerItemProxy */;
+		};
+		F218096AC3E6EB5C49D9E755 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Twurl-Alamofire";
+			target = 89B5DA211F6DFA1B0F5AEB14 /* Pods-Twurl-Alamofire */;
+			targetProxy = F7452FF093E237274A775947 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		072B3DBC8F8A2AFBBCDBC986 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C752D17C23259400892C320E /* Pods-Twurl-SWRevealViewController-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Twurl-SWRevealViewController/Pods-Twurl-SWRevealViewController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-Twurl-SWRevealViewController/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-Twurl-SWRevealViewController/Pods-Twurl-SWRevealViewController.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SWRevealViewController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		0CF4EDE3AE8C27D33E0B8AD5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ADEB79DEF41E1A45E345CD9A /* Pods-Twurl-DateTools-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Twurl-DateTools/Pods-Twurl-DateTools-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-Twurl-DateTools/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-Twurl-DateTools/Pods-Twurl-DateTools.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = DateTools;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		0D99852B3313A2E995BA8B45 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1137212A1DCD4CC5C15CA05C /* Pods-Twurl-FontAwesome.swift-Private.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Pods-Twurl";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = FontAwesome.swift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		1C06494E46D33A03ED5A55A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B707F4CE09C9A8A39274128 /* Pods-Twurl-NSDate+TimeAgo-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Twurl-NSDate+TimeAgo/Pods-Twurl-NSDate+TimeAgo-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-Twurl-NSDate+TimeAgo/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-Twurl-NSDate+TimeAgo/Pods-Twurl-NSDate+TimeAgo.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = NSDate_TimeAgo;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		1E7E35E66A90EAC2B3F9E8DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA5A50950E820DC5DD2DBE6E /* Pods-Twurl.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Twurl/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-Twurl/Pods-Twurl.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_Twurl;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		2F642A46FAEC9AA856387EB1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C752D17C23259400892C320E /* Pods-Twurl-SWRevealViewController-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Twurl-SWRevealViewController/Pods-Twurl-SWRevealViewController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-Twurl-SWRevealViewController/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-Twurl-SWRevealViewController/Pods-Twurl-SWRevealViewController.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SWRevealViewController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		32F4E62A099384838F567359 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1137212A1DCD4CC5C15CA05C /* Pods-Twurl-FontAwesome.swift-Private.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Pods-Twurl";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = FontAwesome.swift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		403C71419A56D4599FDC9D8B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1137212A1DCD4CC5C15CA05C /* Pods-Twurl-FontAwesome.swift-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Twurl-FontAwesome.swift/Pods-Twurl-FontAwesome.swift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-Twurl-FontAwesome.swift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-Twurl-FontAwesome.swift/Pods-Twurl-FontAwesome.swift.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = FontAwesome_swift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		406887B3E9B676DD8610D306 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1137212A1DCD4CC5C15CA05C /* Pods-Twurl-FontAwesome.swift-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Twurl-FontAwesome.swift/Pods-Twurl-FontAwesome.swift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-Twurl-FontAwesome.swift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-Twurl-FontAwesome.swift/Pods-Twurl-FontAwesome.swift.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = FontAwesome_swift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		43656678A956AA27CE823ED5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD6670008E2499BA7B3FA70E /* Pods-Twurl-Alamofire-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Twurl-Alamofire/Pods-Twurl-Alamofire-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-Twurl-Alamofire/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-Twurl-Alamofire/Pods-Twurl-Alamofire.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Alamofire;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		46C97757DCFA86E1BB562522 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2AFAB6006B5B85A401E059AA /* Pods-Twurl-UIScrollView-InfiniteScroll-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Twurl-UIScrollView-InfiniteScroll/Pods-Twurl-UIScrollView-InfiniteScroll-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-Twurl-UIScrollView-InfiniteScroll/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-Twurl-UIScrollView-InfiniteScroll/Pods-Twurl-UIScrollView-InfiniteScroll.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = UIScrollView_InfiniteScroll;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		555325186BF92239E0C84FA7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83248B50548EDCAF79A7A0D6 /* Pods-Twurl-SwiftyJSON-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Twurl-SwiftyJSON/Pods-Twurl-SwiftyJSON-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-Twurl-SwiftyJSON/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-Twurl-SwiftyJSON/Pods-Twurl-SwiftyJSON.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SwiftyJSON;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		78475479049DD5A9312E5507 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		79F3EEC27BE65D02645847B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C916F5575B61BA5FF4D177A5 /* Pods-Twurl.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Twurl/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-Twurl/Pods-Twurl.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_Twurl;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		AAFEF1D5FD57895AF1EF525D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B707F4CE09C9A8A39274128 /* Pods-Twurl-NSDate+TimeAgo-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Twurl-NSDate+TimeAgo/Pods-Twurl-NSDate+TimeAgo-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-Twurl-NSDate+TimeAgo/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-Twurl-NSDate+TimeAgo/Pods-Twurl-NSDate+TimeAgo.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = NSDate_TimeAgo;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B0B0E4AC70F96A3B95A77DD3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AEDEF7D90803A9C6E926B1D9 /* Pods-Twurl-HanekeSwift-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Twurl-HanekeSwift/Pods-Twurl-HanekeSwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-Twurl-HanekeSwift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-Twurl-HanekeSwift/Pods-Twurl-HanekeSwift.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Haneke;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B903027A02B5CF1437E6277C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		BF70C62FD2B1D7E489E81D6F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2AFAB6006B5B85A401E059AA /* Pods-Twurl-UIScrollView-InfiniteScroll-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Twurl-UIScrollView-InfiniteScroll/Pods-Twurl-UIScrollView-InfiniteScroll-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-Twurl-UIScrollView-InfiniteScroll/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-Twurl-UIScrollView-InfiniteScroll/Pods-Twurl-UIScrollView-InfiniteScroll.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = UIScrollView_InfiniteScroll;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CB607BB24910B82954523B95 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83248B50548EDCAF79A7A0D6 /* Pods-Twurl-SwiftyJSON-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Twurl-SwiftyJSON/Pods-Twurl-SwiftyJSON-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-Twurl-SwiftyJSON/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-Twurl-SwiftyJSON/Pods-Twurl-SwiftyJSON.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SwiftyJSON;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CDA773A12E0FD519A44F35F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ADEB79DEF41E1A45E345CD9A /* Pods-Twurl-DateTools-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Twurl-DateTools/Pods-Twurl-DateTools-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-Twurl-DateTools/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-Twurl-DateTools/Pods-Twurl-DateTools.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = DateTools;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D412595FC86F0F4BDE95C4B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AEDEF7D90803A9C6E926B1D9 /* Pods-Twurl-HanekeSwift-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Twurl-HanekeSwift/Pods-Twurl-HanekeSwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-Twurl-HanekeSwift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-Twurl-HanekeSwift/Pods-Twurl-HanekeSwift.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Haneke;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E654049240CD7C8EDF409741 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD6670008E2499BA7B3FA70E /* Pods-Twurl-Alamofire-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Twurl-Alamofire/Pods-Twurl-Alamofire-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-Twurl-Alamofire/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-Twurl-Alamofire/Pods-Twurl-Alamofire.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Alamofire;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		230B5F4B2CD7B9414A1F7A5F /* Build configuration list for PBXNativeTarget "Pods-Twurl-FontAwesome.swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				406887B3E9B676DD8610D306 /* Debug */,
+				403C71419A56D4599FDC9D8B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		449CF5CDFFA74F4AB0C2AE64 /* Build configuration list for PBXNativeTarget "Pods-Twurl-Alamofire" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E654049240CD7C8EDF409741 /* Debug */,
+				43656678A956AA27CE823ED5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5F57DC9402D2022F06C26DB4 /* Build configuration list for PBXNativeTarget "Pods-Twurl-NSDate+TimeAgo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1C06494E46D33A03ED5A55A2 /* Debug */,
+				AAFEF1D5FD57895AF1EF525D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		71363CFA4418A8E5DA3070EA /* Build configuration list for PBXNativeTarget "Pods-Twurl-DateTools" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDA773A12E0FD519A44F35F3 /* Debug */,
+				0CF4EDE3AE8C27D33E0B8AD5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9E0451F42C77DDB62197DD11 /* Build configuration list for PBXNativeTarget "Pods-Twurl-FontAwesome.swift-FontAwesome.swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32F4E62A099384838F567359 /* Debug */,
+				0D99852B3313A2E995BA8B45 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9E9D2BD26F5CA54995B5046D /* Build configuration list for PBXNativeTarget "Pods-Twurl-HanekeSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D412595FC86F0F4BDE95C4B4 /* Debug */,
+				B0B0E4AC70F96A3B95A77DD3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B70DF64BB6820CCA41A42D10 /* Build configuration list for PBXNativeTarget "Pods-Twurl-SWRevealViewController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				072B3DBC8F8A2AFBBCDBC986 /* Debug */,
+				2F642A46FAEC9AA856387EB1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C2A83C4390F8102A001DE194 /* Build configuration list for PBXNativeTarget "Pods-Twurl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79F3EEC27BE65D02645847B9 /* Debug */,
+				1E7E35E66A90EAC2B3F9E8DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D2D324D73AA754BD7233971D /* Build configuration list for PBXNativeTarget "Pods-Twurl-UIScrollView-InfiniteScroll" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46C97757DCFA86E1BB562522 /* Debug */,
+				BF70C62FD2B1D7E489E81D6F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F5678CD0B9CD2AF891EC61B5 /* Build configuration list for PBXNativeTarget "Pods-Twurl-SwiftyJSON" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB607BB24910B82954523B95 /* Debug */,
+				555325186BF92239E0C84FA7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F64AD79274E6E135B60A7E1A /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B903027A02B5CF1437E6277C /* Debug */,
+				78475479049DD5A9312E5507 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 543FFD1E03181981E6060091 /* Project object */;
+}
