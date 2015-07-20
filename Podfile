@@ -13,6 +13,9 @@ target 'Twurl' do
     pod 'UIScrollView-InfiniteScroll'
     pod 'NSDate+TimeAgo'
     pod 'DateTools'
+    pod 'FBSDKShareKit', '~> 4.4'
+    pod 'GoogleAnalytics', '~> 3.12'
+    pod 'SwiftColor', '~> 0.3'
 end
 
 target 'Twurl-Tests' do

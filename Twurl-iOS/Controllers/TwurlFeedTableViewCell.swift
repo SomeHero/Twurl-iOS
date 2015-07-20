@@ -9,7 +9,10 @@
 import UIKit
 
 class TwurlFeedTableViewCell: UITableViewCell {
-
+    
+    @IBOutlet
+    var wrapperView: UIView!
+    
     @IBOutlet
     var headlineLabel: UILabel!
     
@@ -29,7 +32,13 @@ class TwurlFeedTableViewCell: UITableViewCell {
     var twitterHandleLabel: UILabel!
     
     @IBOutlet
+    var twitterProfileImage: UIImageView!
+    
+    @IBOutlet
     var timestampLabel: UILabel!
+    
+    @IBOutlet
+    var originalTweetLabel :UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()

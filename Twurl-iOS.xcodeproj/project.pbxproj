@@ -11,6 +11,9 @@
 		427B6CD91B4C969600E5E827 /* CategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427B6CD81B4C969600E5E827 /* CategoryTableViewCell.swift */; };
 		428411161B5038C90027F21F /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 428411141B5038C90027F21F /* Fabric.framework */; };
 		428411171B5038C90027F21F /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 428411151B5038C90027F21F /* Crashlytics.framework */; };
+		4284111F1B5448870027F21F /* ADAM.CG PRO.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4284111E1B5448870027F21F /* ADAM.CG PRO.otf */; };
+		428411211B54494A0027F21F /* Glamor-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 428411201B54494A0027F21F /* Glamor-Bold.otf */; };
+		428411251B544A550027F21F /* Avenir.ttc in Resources */ = {isa = PBXBuildFile; fileRef = 428411241B544A550027F21F /* Avenir.ttc */; };
 		428DB8721B2386780006C363 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428DB8711B2386780006C363 /* AppDelegate.swift */; };
 		428DB8751B2386780006C363 /* Twurl_iOS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 428DB8731B2386780006C363 /* Twurl_iOS.xcdatamodeld */; };
 		428DB8771B2386780006C363 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428DB8761B2386780006C363 /* ViewController.swift */; };
@@ -57,6 +60,9 @@
 		427B6CD81B4C969600E5E827 /* CategoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CategoryTableViewCell.swift; path = Controllers/CategoryTableViewCell.swift; sourceTree = "<group>"; };
 		428411141B5038C90027F21F /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
 		428411151B5038C90027F21F /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
+		4284111E1B5448870027F21F /* ADAM.CG PRO.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "ADAM.CG PRO.otf"; path = "../../../Downloads/ADAMCGPRO - SHRENIK 2/ADAM.CG PRO.otf"; sourceTree = "<group>"; };
+		428411201B54494A0027F21F /* Glamor-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Glamor-Bold.otf"; path = "../../../Downloads/Glamor - OTF/Glamor-Bold.otf"; sourceTree = "<group>"; };
+		428411241B544A550027F21F /* Avenir.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; name = Avenir.ttc; path = ../../../../../System/Library/Fonts/Avenir.ttc; sourceTree = "<group>"; };
 		428DB86C1B2386780006C363 /* Twurl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Twurl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		428DB8701B2386780006C363 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		428DB8711B2386780006C363 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -228,6 +234,9 @@
 		42CB16FF1B48876800F75DA8 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				4284111E1B5448870027F21F /* ADAM.CG PRO.otf */,
+				428411241B544A550027F21F /* Avenir.ttc */,
+				428411201B54494A0027F21F /* Glamor-Bold.otf */,
 				42CB170C1B4887C900F75DA8 /* FontAwesome.ttf */,
 				42CB170E1B4887D200F75DA8 /* Gotham-Book.otf */,
 				42CB170F1B4887D200F75DA8 /* Gotham-Medium.otf */,
@@ -305,6 +314,7 @@
 				TargetAttributes = {
 					428DB86B1B2386780006C363 = {
 						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = 5K56Y8ABUA;
 					};
 					428DB8831B2386780006C363 = {
 						CreatedOnToolsVersion = 6.2;
@@ -344,10 +354,13 @@
 				42CB17051B48879300F75DA8 /* OpenSans-Bold.ttf in Resources */,
 				42CB17111B4887D200F75DA8 /* Gotham-Medium.otf in Resources */,
 				42CB17101B4887D200F75DA8 /* Gotham-Book.otf in Resources */,
+				428411211B54494A0027F21F /* Glamor-Bold.otf in Resources */,
 				428DB87C1B2386780006C363 /* Images.xcassets in Resources */,
 				42CB17071B48879300F75DA8 /* OpenSans-Semibold.ttf in Resources */,
+				4284111F1B5448870027F21F /* ADAM.CG PRO.otf in Resources */,
 				42CB170B1B48879B00F75DA8 /* OpenSans-Regular.ttf in Resources */,
 				42CB17061B48879300F75DA8 /* OpenSans-ExtraBold.ttf in Resources */,
+				428411251B544A550027F21F /* Avenir.ttc in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -514,7 +527,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -550,7 +563,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -561,7 +574,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5E4ADC019A863F84DCA2AF1E /* Pods-Twurl.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: James Rhodes (X255VRB688)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -569,7 +585,9 @@
 				INFOPLIST_FILE = "Twurl-iOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "b7b44871-958e-4d82-a2af-5eac1a9f94f5";
 				SWIFT_OBJC_BRIDGING_HEADER = "Twurl-iOS/Twurl-Bridging-Header.h";
+				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Debug;
 		};
@@ -577,7 +595,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1978F2023144351415D59921 /* Pods-Twurl.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: James Rhodes";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -585,7 +606,9 @@
 				INFOPLIST_FILE = "Twurl-iOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "8128ff51-25c1-4ac2-a030-a640af0e41f2";
 				SWIFT_OBJC_BRIDGING_HEADER = "Twurl-iOS/Twurl-Bridging-Header.h";
+				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Release;
 		};

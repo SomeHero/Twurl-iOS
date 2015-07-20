@@ -12,14 +12,19 @@ import SwiftyJSON
 import FontAwesome_swift
 import Social
 import MessageUI
+import FBSDKShareKit
+import SwiftColor
 
-class TwurlWebViewController: UIViewController, MFMailComposeViewControllerDelegate {
+class TwurlWebViewController: UIViewController, MFMailComposeViewControllerDelegate, WKNavigationDelegate, FBSDKSharingDelegate {
 
     var webView: WKWebView
     var twurl: JSON
     
     @IBOutlet
     var webViewFrame:UIView!
+    
+    @IBOutlet
+    var activityIndicator: UIActivityIndicatorView!
     
     @IBOutlet
     var closeButton:UIButton!
@@ -40,28 +45,27 @@ class TwurlWebViewController: UIViewController, MFMailComposeViewControllerDeleg
         self.dismissViewControllerAnimated(true, completion: nil)
     }
     @IBAction func shareWithFacebook(sender: UIButton) {
-        if SLComposeViewController.isAvailableForServiceType(SLServiceTypeFacebook){
-            var facebookSheet:SLComposeViewController = SLComposeViewController(forServiceType: SLServiceTypeFacebook)
-            
-            let title = twurl["headline"].stringValue
-            var messageBody = title.substringToIndex(advance(title.startIndex, 80))
-            messageBody += "  "
-            messageBody += twurl["url"].stringValue
-            
-            facebookSheet.setInitialText("Share on Facebook")
-            self.presentViewController(facebookSheet, animated: true, completion: nil)
-        } else {
-            var alert = UIAlertController(title: "Accounts", message: "Please login to a Facebook account to share.", preferredStyle: UIAlertControllerStyle.Alert)
-            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
-            self.presentViewController(alert, animated: true, completion: nil)
-        }
+        let content : FBSDKShareLinkContent = FBSDKShareLinkContent()
+        content.contentURL = NSURL(string: self.twurl["url"].stringValue)
+        content.contentTitle = self.twurl["headline"].stringValue
+        //content.contentDescription = "<INSERT STRING HERE>"
+        content.imageURL = NSURL(string: self.twurl["headline_image_url"].stringValue)
+        
+        FBSDKShareDialog.showFromViewController(self, withContent: content, delegate: self)
     }
     @IBAction func shareWithTwitter(sender: UIButton) {
         if SLComposeViewController.isAvailableForServiceType(SLServiceTypeTwitter){
             var twitterSheet:SLComposeViewController = SLComposeViewController(forServiceType: SLServiceTypeTwitter)
             
             let title = twurl["headline"].stringValue
-            var messageBody = title.substringToIndex(advance(title.startIndex, 80))
+            
+            var messageBody = ""
+            if  NSString(string: title).length >= 80 {
+                messageBody = title.substringToIndex(advance(title.startIndex, 80))
+            } else {
+                messageBody = title
+            }
+            title.substringToIndex(advance(title.startIndex, 80))
             messageBody += "  "
             messageBody += twurl["url"].stringValue
             
@@ -75,7 +79,15 @@ class TwurlWebViewController: UIViewController, MFMailComposeViewControllerDeleg
         }
     }
     @IBAction func shareWithEmail(sender: AnyObject) {
+        UINavigationBar.appearance().barTintColor = UIColor(hexString: "#23BDFA")
+        let font = UIFont(name: "OpenSans", size: 14)
+        
+        if let font = font {
+            UINavigationBar.appearance().titleTextAttributes = [NSFontAttributeName : font, NSForegroundColorAttributeName : UIColor.whiteColor()]
+        }
+        
         let mailComposeViewController = configuredMailComposeViewController()
+        
         if MFMailComposeViewController.canSendMail() {
             self.presentViewController(mailComposeViewController, animated: true, completion: nil)
         } else {
@@ -107,7 +119,13 @@ class TwurlWebViewController: UIViewController, MFMailComposeViewControllerDeleg
     }
     @IBAction func shareWithOther(sender: UIButton) {
         let title = twurl["headline"].stringValue
-        var textToShare = title.substringToIndex(advance(title.startIndex, 80))
+        var textToShare = ""
+        
+        if  NSString(string: title).length >= 80 {
+            textToShare = title.substringToIndex(advance(title.startIndex, 80))
+        } else {
+            textToShare = title
+        }
 
         if let myWebsite = NSURL(string: twurl["url"].stringValue)
         {
@@ -149,6 +167,7 @@ class TwurlWebViewController: UIViewController, MFMailComposeViewControllerDeleg
         self.shareWithOther.titleLabel?.font = UIFont.fontAwesomeOfSize(24)
         self.shareWithOther.setTitle(String.fontAwesomeIconWithName(.ShareSquareO), forState: .Normal)
         
+        self.webView.navigationDelegate = self;
         self.webView.frame = self.webViewFrame.frame
         self.webViewFrame.addSubview(self.webView)
         
@@ -177,14 +196,19 @@ class TwurlWebViewController: UIViewController, MFMailComposeViewControllerDeleg
     func backClicked() {
         self.navigationController?.popViewControllerAnimated(true)
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func webView(webView: WKWebView, didStartProvisionalNavigation navigation: WKNavigation!) {
+        self.activityIndicator.startAnimating()
     }
-    */
-
+    func webView(webView: WKWebView, didFinishNavigation navigation: WKNavigation!) {
+        self.activityIndicator.stopAnimating()
+    }
+    func sharer(sharer: FBSDKSharing!, didCompleteWithResults results: [NSObject : AnyObject]!) {
+        print("Share Complete")
+    }
+    func sharer(sharer: FBSDKSharing!, didFailWithError error: NSError!) {
+        print("Share Error")
+    }
+    func sharerDidCancel(sharer: FBSDKSharing!) {
+        print("Share Cancelled")
+    }
 }

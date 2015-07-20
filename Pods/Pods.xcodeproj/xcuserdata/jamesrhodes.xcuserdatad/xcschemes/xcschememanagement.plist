@@ -4,47 +4,47 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Pods-Twurl-Alamofire.xcscheme</key>
+		<key>Alamofire.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-Twurl-DateTools.xcscheme</key>
+		<key>Bolts.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-Twurl-FontAwesome.swift-FontAwesome.swift.xcscheme</key>
+		<key>DateTools.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-Twurl-FontAwesome.swift.xcscheme</key>
+		<key>FBSDKCoreKit.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-Twurl-HanekeSwift.xcscheme</key>
+		<key>FBSDKShareKit.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-Twurl-NSDate+TimeAgo.xcscheme</key>
+		<key>FontAwesome.swift-FontAwesome.swift.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-Twurl-SWRevealViewController.xcscheme</key>
+		<key>FontAwesome.swift.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-Twurl-SwiftyJSON.xcscheme</key>
+		<key>HanekeSwift.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-Twurl-UIScrollView-InfiniteScroll.xcscheme</key>
+		<key>NSDate+TimeAgo.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -54,55 +54,95 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>SWRevealViewController.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SwiftColor.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SwiftyJSON.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>UIScrollView-InfiniteScroll.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>05D81F3C6A39712B897F59A7</key>
+		<key>02F24BD553B262B6972E736BC90846DF</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>4D6157B0125CABAE98522C57</key>
+		<key>25E0F0AEF3D0FF9A663EBD748DD275FD</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>6704700F60DE038B7C0DF7BF</key>
+		<key>4063C8C787B0BFE275E83E92898EF216</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>7F13BF5E52E14F371878686E</key>
+		<key>7897F75F7BC3DA92A33FEC7EFB8FE0D0</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>89B5DA211F6DFA1B0F5AEB14</key>
+		<key>8173268CCF933508A3E472CEB843790C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>8A3A741A1C7A47F30FC7D488</key>
+		<key>866DE34D4A5E48778B8FC3C17138CB60</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>CA58704D7F1803B7B4852A9B</key>
+		<key>9FAB5ACF70AC14E44ADEE8BA28E7BC0D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>D10475343017523601D8EDE3</key>
+		<key>A6040F8319EB2FD37A2238EE24B0F63A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>D2EF31E1301062C310C6D295</key>
+		<key>C3E4EB4E1223C0C0D0B2B9094DCB392D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>D6B9EEE58DF887177F084031</key>
+		<key>C88D21BFEC9AAE77D3942FFC6294876C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E19E2845E9A9947FDDB418CB5FACAAEF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E3DD52D4D55838E0B2482F6FA2E89196</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F290FAFC0B9CD0E18084FBBA18846F01</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FC3AC9EF75AB93C4E96F736DAEA2C6CC</key>
 		<dict>
 			<key>primary</key>
 			<true/>

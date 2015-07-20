@@ -16,6 +16,8 @@ class CategoryMenuTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.tableView.contentInset = UIEdgeInsets(top: -1, left: 0, bottom: 0, right: 0)
+        
         TwurlApiManager.getCategories({ (response) -> Void in
             println("Success")
             self.categories = response
@@ -42,16 +44,23 @@ class CategoryMenuTableViewController: UITableViewController {
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete method implementation.
         // Return the number of rows in the section.
-        return self.categories.count;
+        return self.categories.count + 1;
     }
 
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("CategoryCell", forIndexPath: indexPath) as! CategoryTableViewCell
 
-        cell.categoryLabel.text = self.categories[indexPath.row]["name"].stringValue
+        if(indexPath.row == 0) {
+            cell.categoryLabel.text = "All Articles"
+        } else {
+            cell.categoryLabel.text = self.categories[indexPath.row-1]["name"].stringValue
+        }
         
         return cell
+    }
+    override func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 1.0
     }
 
     /*
@@ -95,12 +104,19 @@ class CategoryMenuTableViewController: UITableViewController {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using [segue destinationViewController].
         // Pass the selected object to the new view controller.
-        print("selected a category")
         let navController = segue.destinationViewController as! UINavigationController
         let vc = navController.topViewController as! TwurlFeedViewController
         
         let indexPath = self.tableView.indexPathForSelectedRow()!
-        vc.category_id = self.categories[indexPath.row]["id"].int
+        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        
+        if(indexPath.row == 0) {
+            appDelegate.categoryName = "All Articles"
+            vc.category_id = nil
+        } else {
+            appDelegate.categoryName = self.categories[indexPath.row-1]["name"].stringValue
+            vc.category_id = self.categories[indexPath.row-1]["id"].int
+        }
     }
 
 }

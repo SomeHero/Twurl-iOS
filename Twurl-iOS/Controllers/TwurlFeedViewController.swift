@@ -27,13 +27,15 @@ class TwurlFeedViewController: UIViewController, UITableViewDelegate, UITableVie
     var tableView: UITableView!
     
     var twurls: SwiftyJSON.JSON = []
+    var refreshControl: UIRefreshControl!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.page_number = 1
         self.automaticallyAdjustsScrollViewInsets = false
-        self.tableView.frame = CGRectMake(0, 0, self.tableView.bounds.size.width, self.tableView.bounds.size.height)
+        
+        self.tableView.contentInset = UIEdgeInsets(top: -1, left: 0, bottom: 0, right: 0)
         
         if self.revealViewController() != nil {
             menuButton.target = self.revealViewController()
@@ -43,8 +45,6 @@ class TwurlFeedViewController: UIViewController, UITableViewDelegate, UITableVie
         }
         //self.configureTableView()
         
-        self.tableView.contentInset = UIEdgeInsetsZero
-        // change indicator view style to white
         self.tableView.infiniteScrollIndicatorStyle = .Gray
         
         // Set custom indicator margin
@@ -66,17 +66,65 @@ class TwurlFeedViewController: UIViewController, UITableViewDelegate, UITableVie
             
             tableView.finishInfiniteScroll()
         }
+        
+        self.refreshControl = UIRefreshControl()
+        self.refreshControl.addTarget(self, action: Selector("refreshInvoked"), forControlEvents: UIControlEvents.ValueChanged)
+        self.tableView.addSubview(refreshControl)
     }
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         
+        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        
         UIApplication.sharedApplication().statusBarHidden = false
+        
+        var width: CGFloat = UIScreen.mainScreen().bounds.size.width - 100
+        
+        var titleView: UIView = UIView(frame: CGRectMake(50, 0, width, 44))
+        
+        var lblTitle: UILabel = UILabel()
+
+        lblTitle.text = "twurl"
+        lblTitle.backgroundColor = UIColor.clearColor()
+        lblTitle.textColor = UIColor.whiteColor()
+        lblTitle.font = UIFont(name: "Avenir-Medium", size: 18.0)
+        lblTitle.textAlignment = .Center
+        lblTitle.setTranslatesAutoresizingMaskIntoConstraints(false)
+        
+        titleView.addSubview(lblTitle);
+        
+        var categoryNameLabel: UILabel = UILabel()
+
+        categoryNameLabel.text = appDelegate.categoryName
+        categoryNameLabel.backgroundColor = UIColor.clearColor()
+        categoryNameLabel.textColor = UIColor.whiteColor()
+        categoryNameLabel.font = UIFont(name: "Avenir-Medium", size: 12.0)
+        categoryNameLabel.textAlignment = .Center
+        categoryNameLabel.setTranslatesAutoresizingMaskIntoConstraints(false)
+        
+        titleView.addSubview(categoryNameLabel);
+
+        self.navigationItem.titleView = titleView;
+    
+        titleView.addConstraint(NSLayoutConstraint(item: lblTitle, attribute: .Leading, relatedBy: .Equal, toItem: titleView, attribute: .Left, multiplier: 1, constant: -16))
+        
+        titleView.addConstraint(NSLayoutConstraint(item: lblTitle, attribute: .Trailing, relatedBy: .Equal, toItem: titleView, attribute: .Right, multiplier: 1, constant: 0))
+        
+        titleView.addConstraint(NSLayoutConstraint(item: lblTitle, attribute: .Top, relatedBy: .Equal, toItem: titleView, attribute: .Top, multiplier: 1, constant: 4))
+        
+        titleView.addConstraint(NSLayoutConstraint(item: categoryNameLabel, attribute: .Leading, relatedBy: .Equal, toItem: titleView, attribute: .Left, multiplier: 1, constant: -16))
+        
+        titleView.addConstraint(NSLayoutConstraint(item: categoryNameLabel, attribute: .Trailing, relatedBy: .Equal, toItem: titleView, attribute: .Right, multiplier: 1, constant: 0))
+        
+        titleView.addConstraint(NSLayoutConstraint(item: categoryNameLabel, attribute: .Top, relatedBy: .Equal, toItem: lblTitle, attribute: .Bottom, multiplier: 1, constant: -6))
+        
+        titleView.addConstraint(NSLayoutConstraint(item: categoryNameLabel, attribute: .Height, relatedBy: .Equal, toItem: nil, attribute: .NotAnAttribute, multiplier: 1, constant: 18))
         
         self.configureTableView()
         
         TwurlApiManager.getTwurls(self.category_id, page_number: self.page_number, success: { (response) -> Void in
             self.twurls = response
-            
+        
             self.tableView.reloadData()
             }, failure: { (error) -> Void in
                 println("Failed")
@@ -110,6 +158,11 @@ class TwurlFeedViewController: UIViewController, UITableViewDelegate, UITableVie
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("TwurlItem", forIndexPath: indexPath) as! TwurlFeedTableViewCell
         
+        cell.wrapperView.layer.shadowColor = UIColor.grayColor().CGColor
+        cell.wrapperView.layer.shadowOffset = CGSizeMake(0, 2)
+        cell.wrapperView.layer.shadowOpacity = 0.8
+        cell.wrapperView.layer.shadowRadius = 5.0
+        
         let height = NSNumberFormatter().numberFromString(self.twurls[indexPath.row]["headline_image_height"].stringValue)?.doubleValue
         let width = NSNumberFormatter().numberFromString(self.twurls[indexPath.row]["headline_image_width"].stringValue)?.doubleValue
         
@@ -131,6 +184,12 @@ class TwurlFeedViewController: UIViewController, UITableViewDelegate, UITableVie
         cell.headlineLabel.text = self.twurls[indexPath.row]["headline"].stringValue
         cell.twitterUsernameLabel.text = self.twurls[indexPath.row]["influencer"]["twitter_username"].stringValue
         cell.twitterHandleLabel.text = self.twurls[indexPath.row]["influencer"]["handle"].stringValue
+        if !self.twurls[indexPath.row]["influencer"]["profile_image_url"].stringValue.isEmpty {
+            let url = NSURL(string: self.twurls[indexPath.row]["influencer"]["profile_image_url"].stringValue)!
+            
+            cell.twitterProfileImage.hnk_setImageFromURL(url, format: Format<UIImage>(name: "original"))
+        }
+        cell.originalTweetLabel.text = self.twurls[indexPath.row]["original_tweet"].stringValue
         
         let dateFormatter = NSDateFormatter()
         dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
@@ -188,32 +247,56 @@ class TwurlFeedViewController: UIViewController, UITableViewDelegate, UITableVie
         
         self.performSegueWithIdentifier("ShowArticle", sender: self)
     }
-    
+    func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 1.0
+    }
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         let height = NSNumberFormatter().numberFromString(self.twurls[indexPath.row]["headline_image_height"].stringValue)?.doubleValue
         let width = NSNumberFormatter().numberFromString(self.twurls[indexPath.row]["headline_image_width"].stringValue)?.doubleValue
         
-        var new_height = CGFloat(0.0)
+        var imageHeight = CGFloat(0.0)
         if(height != nil && width != nil) {
             let aspect_ratio = UIScreen.mainScreen().bounds.size.width/CGFloat(width!)
-            new_height = aspect_ratio*CGFloat(height!)
+            imageHeight = aspect_ratio*CGFloat(height!)
         } else {
-            new_height = 0
+            imageHeight = 0
         }
 
+        let screenWidth = UIScreen.mainScreen().bounds.size.width
+        let headlineWidth = screenWidth - 20 - 20-10
+        
+        var headlineHeight = CGFloat(0.0)
         let headline_copy = self.twurls[indexPath.row]["headline"].stringValue
 
         if(!headline_copy.isEmpty) {
             let options : NSStringDrawingOptions = .UsesLineFragmentOrigin
-            var headlineLabelRect = headline_copy.boundingRectWithSize(CGSize(width:280, height: DBL_MAX),
+            var headlineLabelRect = headline_copy.boundingRectWithSize(CGSize(width:Double(headlineWidth), height: DBL_MAX),
             options: options,
-            attributes: [NSFontAttributeName: UIFont(name: "OpenSans", size: 14)!],
+            attributes: [NSFontAttributeName: UIFont(name: "Avenir Medium", size: 24)!],
             context: nil).size
         
-            return CGFloat(new_height)+10.0+headlineLabelRect.height+80.0
+            headlineHeight = headlineLabelRect.height
         }
         
-        return new_height + 100.0
+        
+        var originalTweetHeight = CGFloat(0.0)
+        let originalTweet = self.twurls[indexPath.row]["original_tweet"].stringValue
+        
+        let originalTweetWidth = screenWidth - 20 - 50 - 20-10
+        
+        if(!originalTweet.isEmpty) {
+            let options : NSStringDrawingOptions = .UsesLineFragmentOrigin
+            var labelRect = originalTweet.boundingRectWithSize(CGSize(width:Double(originalTweetWidth), height: DBL_MAX),
+                options: options,
+                attributes: [NSFontAttributeName: UIFont(name: "OpenSans", size: 12)!],
+                context: nil).size
+            
+            originalTweetHeight = labelRect.height
+        } else {
+            originalTweetHeight = 40
+        }
+        
+        return imageHeight+10.0+headlineHeight+21+16+originalTweetHeight+20+20+20
     }
     /*
     // MARK: - Navigation
@@ -233,5 +316,22 @@ class TwurlFeedViewController: UIViewController, UITableViewDelegate, UITableVie
         var viewController = (segue.destinationViewController as! TwurlWebViewController)
     
         viewController.twurl = self.twurls[self.selectedIndex]
+    }
+    func refreshInvoked() {
+        refresh(viaPullToRefresh: true)
+    }
+    
+    func refresh(viaPullToRefresh: Bool = false) {
+        self.page_number = 1
+        
+        TwurlApiManager.getTwurls(self.category_id, page_number: self.page_number, success: { (response) -> Void in
+            self.twurls = SwiftyJSON.JSON(response.arrayObject!)
+            
+            self.tableView.reloadData()
+            self.refreshControl?.endRefreshing()
+            }, failure: { (error) -> Void in
+                self.refreshControl?.endRefreshing()
+                println("Failed")
+        })
     }
 }

@@ -2,12 +2,27 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>fb437200339800135</string>
+			</array>
+		</dict>
+	</array>
+	<key>LSApplicationCategoryType</key>
+	<string></string>
+	<key>FacebookAppID</key>
+	<string>437200339800135</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
-	<string>net.twurl.$(PRODUCT_NAME:rfc1034identifier)</string>
+	<string>net.twurl.twurl-ios</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
@@ -19,7 +34,7 @@
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleVersion</key>
-	<string>1</string>
+	<string>4</string>
 	<key>Fabric</key>
 	<dict>
 		<key>APIKey</key>
@@ -38,7 +53,9 @@
 	<true/>
 	<key>UIAppFonts</key>
 	<array>
+		<string>Glamor-Bold.otf</string>
 		<string>OpenSans-Italic.ttf</string>
+		<string>ADAM.CG PRO.otf</string>
 		<string>OpenSans-Semibold.ttf</string>
 		<string>FontAwesome.ttf</string>
 		<string>OpenSans-ExtraBold.ttf</string>
