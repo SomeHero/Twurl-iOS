@@ -65,9 +65,10 @@ class TwurlWebViewController: UIViewController, MFMailComposeViewControllerDeleg
             } else {
                 messageBody = title
             }
-            title.substringToIndex(advance(title.startIndex, 80))
             messageBody += "  "
             messageBody += twurl["url"].stringValue
+            messageBody += " "
+            messageBody += "@Twurl_App"
             
             twitterSheet.setInitialText(messageBody)
     
